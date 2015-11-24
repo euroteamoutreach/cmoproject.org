@@ -7,3 +7,6 @@ gem "bitters"
 gem "bourbon"
 gem "neat"
 
+source "https://rails-assets.org" do
+  gem "rails-assets-jquery"
+end
