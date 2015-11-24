@@ -1,26 +1,12 @@
-###
-# Helpers
-###
+configure :development do
+  activate :livereload
+end
 
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+activate :directory_indexes
+page "/404.html", directory_index: false
 
 set :css_dir, "stylesheets"
-
 set :js_dir, "javascripts"
-
 set :images_dir, "images"
 
 # Build-specific configuration
