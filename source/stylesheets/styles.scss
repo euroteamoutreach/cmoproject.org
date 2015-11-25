@@ -1,0 +1,46 @@
+#alpha {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 14em;
+  color: #FFF;
+  background-image: url(image_path("cmo-hiker.jpg"));
+  background-position: center center;
+  background-size: cover;
+
+}
+
+#bravo {
+  width: 100%;
+  text-align: center;
+  padding: 12em 0;
+  background: grey;
+
+  div.wrap {
+    @include outer-container;
+  }
+
+  article {
+    @include span-columns(7);
+    border: 1px solid red;
+  }
+
+  aside {
+    @include span-columns(5);
+    border: 1px solid red;
+  }
+}
+
+#charlie {
+  width: 100%;
+  text-align: center;
+  padding: 12em;
+  background: white;
+}
+
+#delta {
+  width: 100%;
+  text-align: center;
+  padding: 12em;
+  background: gray;
+}
