@@ -1,11 +1,11 @@
 header.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
+  $action-color: #004999 !default;
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
-  $navigation-background: transparent;
+  $navigation-background: transparentize($dark-gray, 0.6);
   $navigation-color: transparentize(white, 0.3);
   $navigation-color-hover: white;
   $navigation-height: 70px;
@@ -289,4 +289,18 @@ header.navigation {
       float: right;
     }
   }
+}
+
+.headroom {
+    transition: transform 200ms linear;
+}
+header.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-200%);
+}
+header.headroom--not-top {
+}
+header.headroom--top {
 }
