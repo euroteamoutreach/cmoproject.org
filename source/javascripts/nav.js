@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   $("header").headroom({
     "offset": 50,
-    "tolerance": 5,
+    "tolerance": 10,
   });
 });
 

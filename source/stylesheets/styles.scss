@@ -8,34 +8,38 @@
   background-position: center center;
   background-size: cover;
 
+  .scroll {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    margin-top: 0;
+    width: 100%;
+    color: white;
+  }
 }
 
-#bravo {
+#call-to-men {
   width: 100%;
-  text-align: center;
-  padding: 12em 0;
-  background: grey;
+  // text-align: left;
+  padding: 8em 0;
+
+  p {
+    font-size: 1.2em;
+  }
 
   div.wrap {
     @include outer-container;
   }
 
-  article {
-    @include span-columns(7);
-    border: 1px solid red;
-  }
-
   aside {
-    @include span-columns(5);
-    border: 1px solid red;
+    @include span-columns(4);
+    // border: 1px solid red;
   }
-}
 
-#charlie {
-  width: 100%;
-  text-align: center;
-  padding: 12em;
-  background: white;
+  article {
+    @include span-columns(8);
+    // border: 1px solid red;
+  }
 }
 
 #delta {
