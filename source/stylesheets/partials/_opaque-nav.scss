@@ -4,9 +4,9 @@ $action-color: #004999 !default;
 $dark-gray: #333 !default;
 $large-screen: em(860) !default;
 $navigation-padding: 1em;
-$navigation-background: transparent;
-$navigation-color: transparentize(white, 0.3);
-$navigation-color-hover: white;
+$navigation-background: white;
+$navigation-color: transparentize($dark-gray, 0.3);
+$navigation-color-hover: $dark-gray;
 $navigation-height: 70px;
 $navigation-nav-button-background: $action-color;
 $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
@@ -18,14 +18,14 @@ $navigation-submenu-padding: 1em;
 $navigation-submenu-width: 12em;
 $horizontal-bar-mode: $large-screen;
 
-header.navigation {
+#opaque-nav {
 
   background-color: $navigation-background;
-  border-bottom: 1px solid $navigation-color;
+  border-bottom: 1px solid $light-gray;
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
-  position: absolute;
+  position: fixed;
 
   .navigation-wrapper {
     @include clearfix;
@@ -107,7 +107,7 @@ header.navigation {
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
-    text-align: right;
+    text-align: center;
     width: 100%;
     z-index: 9999;
 

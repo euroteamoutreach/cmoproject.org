@@ -1,4 +1,5 @@
 //= require jquery
 //= require scroll
-//= require nav
+//= require transparent-nav
+//= require opaque-nav
 
