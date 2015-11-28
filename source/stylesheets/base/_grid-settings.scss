@@ -12,13 +12,9 @@ $visual-grid-opacity: 0.1;
 // $max-width: 1200px;
 
 // Neat Breakpoints
-// $phone: 0;
 $large-screen: 900px;
 $medium-screen: 768px;
 $small-screen: 480px;
 
-// $phone-up: new-breakpoint(min-width $phone 4);
-// $medium-screen-up: new-breakpoint(min-width $medium-screen 6);
-// $large-screen-up: new-breakpoint(min-width $large-screen 12);
 $tablet: new-breakpoint(max-width $medium-screen 8);
 $mobile: new-breakpoint(max-width $small-screen 4);

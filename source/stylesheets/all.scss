@@ -1,11 +1,10 @@
 @charset "utf-8";
 
-
 @import "normalize";
 @import "bourbon";
 @import "base/base";   /* Bitters needs to be imported before Neat */
 @import "neat";
 
-@import "partials/nav";
+@import "partials/*";
 @import "styles";
 

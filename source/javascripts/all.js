@@ -1,2 +1,4 @@
 //= require jquery
-//= require_tree .
+//= require scroll
+//= require nav
+

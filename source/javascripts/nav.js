@@ -10,10 +10,5 @@ $(document).ready(function() {
       }
     });
   });
-
-  $("header").headroom({
-    "offset": 50,
-    "tolerance": 10,
-  });
 });
 
