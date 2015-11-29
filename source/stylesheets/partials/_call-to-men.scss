@@ -1,13 +1,13 @@
 #call-to-men {
   width: 100%;
   height: 100vh;
-  padding: 6em 4em 8em 4em;
+  padding: 9em 6em 6em 6em;
   background-size: cover;
   text-align: center;
   position: relative;
 
   p {
-    font-size: 2.5vmin;
+    font-size: 2.2vmin;
   }
 
   div.wrap {
@@ -17,6 +17,7 @@
 
   aside {
     @include span-columns(4);
+    padding-right: 1em;
     // border: 1px solid red;
   }
 
