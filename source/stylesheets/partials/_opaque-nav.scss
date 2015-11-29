@@ -1,0 +1,152 @@
+$base-border-radius: 3px !default;
+$large-screen: em(860) !default;
+$navigation-padding: 1em;
+$navigation-background: $text-icon-white;
+$navigation-color: $primary-blue-dark;
+$navigation-color-hover: $primary-blue-dark;
+$navigation-height: 70px;
+$navigation-active-link-color: transparentize($text-icon-white, 0.5);
+$horizontal-bar-mode: $large-screen;
+
+#opaque-nav {
+
+  background-color: $navigation-background;
+  border-bottom: 1px solid $light-gray;
+  min-height: $navigation-height;
+  width: 100%;
+  z-index: 999;
+  @include position(fixed);
+  @include transform(translateY(-100%));
+  @include transition(all 0.15s linear);
+
+  &.is-visible {
+    @include transform(translateY(0));
+  }
+
+  .navigation-wrapper {
+    @include clearfix;
+    padding: 0 15px;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .logo {
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  // Mobile view
+
+  .navigation-menu-button {
+    color: $navigation-color;
+    display: block;
+    float: right;
+    line-height: $navigation-height;
+    margin: 0;
+    padding-right: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include media ($horizontal-bar-mode) {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      color: $navigation-color-hover;
+    }
+  }
+
+  // Nav menu
+
+  nav {
+    float: none;
+    min-height: $navigation-height;
+    z-index: 9999999;
+
+    @include media ($horizontal-bar-mode) {
+      float: right;
+    }
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999;
+
+    &.show {
+      display: block;
+    }
+
+    @include media ($horizontal-bar-mode) {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  // The nav items
+
+  ul li.nav-link {
+    background: $navigation-background;
+    display: block;
+    line-height: $navigation-height;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+
+    @include media ($horizontal-bar-mode) {
+      background: transparent;
+      display: inline;
+      line-height: $navigation-height;
+      text-decoration: none;
+      width: auto;
+      padding-right: 2em;
+    }
+
+    a {
+      color: $navigation-color;
+      display: inline-block;
+      text-decoration: none;
+      line-height: 30px;
+
+      &:focus,
+      &:hover {
+        color: $navigation-color-hover;
+        border-bottom: 2px solid $navigation-color-hover;
+      }
+    }
+
+    button {
+      border: 1px solid $navigation-color;
+      background-color: transparent;
+      vertical-align: initial;
+      padding: em(10px) em(20px);
+      text-transform: uppercase;
+      color: $navigation-color;
+      &:hover,
+      &:focus {
+        background-color: transparentize($navigation-color, 0.7);
+      }
+    }
+
+    a.button {
+      &:hover,
+      &:focus {
+        border: 0;
+      }
+    }
+  }
+
+  .active-nav-item a {
+    border-bottom: 1px solid $navigation-active-link-color;
+    padding-bottom: 3px;
+  }
+}

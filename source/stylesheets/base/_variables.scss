@@ -17,14 +17,18 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$primary-blue-dark: #1976D2;
+$primary-blue: #2196F3;
+$primary-blue-light: #BBDEFB;
+$text-icon-white: #FFFFFF;
+$accent-green: #8BC34A;
+$dark-gray: #212121;
+$medium-gray: #727272;
+$light-gray: #B6B6B6;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $medium-gray;
+$action-color: $primary-blue;
 
 // Border
 $base-border-color: $light-gray;
