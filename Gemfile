@@ -9,4 +9,5 @@ gem "neat"
 
 source "https://rails-assets.org" do
   gem "rails-assets-jquery"
+  gem "rails-assets-moment"
 end
