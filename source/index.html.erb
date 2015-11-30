@@ -26,9 +26,78 @@ title: Carpathian Mountain Outreach
 </section>
 
 <section id="cmo-men-sunset">
+
+  <div id="js-fadeInElement" class="fade-in-element">
+    <h2>Got 1 minute?</h2>
+
+    <div class="modal">
+      <label for="modal-1">
+        <div class="modal-trigger">
+          <span class="trigger-text">Watch the CMO Movie Trailer</span>
+          <i class="fa fa-play-circle fa-2x fa-fw"></i>
+        </div>
+      </label>
+      <input class="modal-state" id="modal-1" type="checkbox" />
+      <div class="modal-fade-screen">
+        <div class="modal-inner">
+          <div class="modal-close" for="modal-1"></div>
+          <div class="video">
+            <div class="video-wrapper">
+              <iframe src="https://player.vimeo.com/video/56083375?color=2196F3&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="full-movie-link"><a href="#">Or watch the full movie here</a></p>
+  </div>
+
+  <a class="scroll scroll-on-page-link" href="#full-movie-link">
+    <i class="fa fa-chevron-down fa-2x"></i>
+  </a>
 </section>
 
-<section id="delta">
-  <h2>DELTA</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<section id="the-plan">
+  <div class="wrap">
+    <div class="cards">
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag "the-plan.jpg" %>
+        </div>
+        <div class="card-header">
+          <h5>The Plan</h5>
+        </div>
+        <div class="card-copy">
+          <%= data.content.the_plan %>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag "when-where-how.jpg" %>
+        </div>
+        <div class="card-header">
+          <h5>When, Where, How</h5>
+        </div>
+        <div class="card-copy">
+          <%= data.content.when_where_how %>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag "requirements.jpg" %>
+        </div>
+        <div class="card-header">
+          <h5>Basic Requirements</h5>
+        </div>
+        <div class="card-copy">
+          <%= data.content.requirements %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="camping-landscape">
 </section>
