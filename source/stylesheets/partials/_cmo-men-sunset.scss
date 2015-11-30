@@ -42,7 +42,16 @@
 
     p {
       color: $base-font-color;
+      margin: 1em 0 0 0;
       line-height: $base-line-height;
+    }
+
+    a {
+      text-decoration: underline;
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     #cmo-trailer-preview {
@@ -67,9 +76,9 @@
   }
 
   .modal {
-    $base-border-color: #dcdcdc !default;
+    // $base-border-color: #dcdcdc !default;
     $base-border-radius: 3px !default;
-    $base-background-color: #fff !default;
+    // $base-background-color: #fff !default;
     $base-font-size: 1em !default;
     $base-line-height: 1.5em !default;
     $medium-screen: em(640) !default;
@@ -102,7 +111,7 @@
       padding-left: 1em;
       color: $text-icon-white;
       margin: 0 auto;
-      background-color: $primary-blue-dark;
+      background-color: $action-color;
       border-radius: $modal-trigger-image-width / 2;
       font-weight: normal;
 
