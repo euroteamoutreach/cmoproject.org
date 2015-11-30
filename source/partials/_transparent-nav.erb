@@ -1,16 +1,20 @@
 <header id="transparent-nav" class="navigation" role="banner">
   <div class="navigation-wrapper">
-    <a href="javascript:void(0)" class="logo">
+    <% link_to "/", class: "logo" do %>
       <%= image_tag "cmo-logo-white.png" %>
-    </a>
+    <% end %>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu-tra">MENU</a>
     <nav role="navigation">
       <ul id="js-navigation-menu-tra" class="navigation-menu show">
-        <li class="nav-link"><a class="scroll-on-page-link" href="#call-to-men">Overview</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">FAQ</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Movie</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Testimonies</a></li>
-        <li class="nav-link"><a href="#" class="button"><button>Apply</button></a></li>
+        <li class="nav-link"><%= link_to "Overview", overview_smart_path(current_page.path), class: "scroll-on-page-link" %></li>
+        <li class="nav-link"><%= link_to "FAQ", "/faq" %></li>
+        <li class="nav-link"><%= link_to "Movie", "/movie" %></li>
+        <li class="nav-link"><%= link_to "Testimonies", "/testimonies" %></li>
+        <li class="nav-link">
+          <% link_to "/apply", class: "button" do %>
+            <%= content_tag :button, "Apply" %>
+          <% end %>
+        </li>
       </ul>
     </nav>
   </div>
