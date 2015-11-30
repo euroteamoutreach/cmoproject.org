@@ -16,7 +16,9 @@
 
   <body class="<%= page_classes %>">
     <%= partial "partials/opaque-nav" %>
-    <%= yield %>
+    <div id="content-wrapper">
+      <%= yield %>
+    </div>
     <%= partial "partials/universal-footer" %>
     <%= partial "partials/copyright-footer" %>
   </body>
