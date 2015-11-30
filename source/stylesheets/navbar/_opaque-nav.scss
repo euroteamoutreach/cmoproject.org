@@ -16,12 +16,7 @@ $horizontal-bar-mode: $large-screen;
   width: 100%;
   z-index: 999;
   @include position(fixed);
-  @include transform(translateY(-100%));
   @include transition(all 0.15s linear);
-
-  &.is-visible {
-    @include transform(translateY(0));
-  }
 
   .navigation-wrapper {
     @include clearfix;
