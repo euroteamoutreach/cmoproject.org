@@ -6,7 +6,7 @@
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu-opa">MENU</a>
     <nav role="navigation">
       <ul id="js-navigation-menu-opa" class="navigation-menu show">
-        <li class="nav-link"><%= link_to "Overview", "/#call-to-men", class: "scroll-on-page-link" %></li>
+        <li class="nav-link"><%= link_to "Overview", overview_smart_path(current_page.path), class: "scroll-on-page-link" %></li>
         <li class="nav-link"><%= link_to "FAQ", "/faq" %></li>
         <li class="nav-link"><%= link_to "Movie", "/movie" %></li>
         <li class="nav-link"><%= link_to "Testimonies", "/testimonies" %></li>

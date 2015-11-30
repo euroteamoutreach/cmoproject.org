@@ -19,6 +19,14 @@ helpers do
       page_title + " | " + base_title
     end
   end
+
+  def overview_smart_path(path)
+    if !!(path =~ /index/)
+      "#call-to-men"
+    else
+      "/#call-to-men"
+    end
+  end
 end
 
 # Build-specific configuration
