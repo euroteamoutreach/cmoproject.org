@@ -16,11 +16,21 @@
     line-height: 1.5em;
     margin: 0 0 1em 0;
     padding: 0;
+    font-weight: 400;
 
     @include media($large-screen) {
       float: left;
       line-height: 1.9em;
       margin-bottom: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
