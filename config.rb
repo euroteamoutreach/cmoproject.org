@@ -8,6 +8,7 @@ page "/404.html", directory_index: false
 set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
+set :partials_dir, "partials"
 
 helpers do
   def full_title(page_title=nil)

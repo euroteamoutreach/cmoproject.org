@@ -7,3 +7,4 @@
 //= require fade-in-box
 //= require trailer-modal
 //= require copyright
+//= require faq

@@ -12,10 +12,9 @@ title: Testimonies
 </section>
 
 <section id="testimonies-body">
-
   <ul class="bullets">
     <% data["testimonies"].each do |testimony| %>
-      <%= partial "partials/testimony", locals: { testimony: testimony } %>
+      <%= partial "testimony", locals: { testimony: testimony } %>
     <% end %>
   </ul>
 </section>

@@ -1,6 +1,18 @@
 ---
 title: Frequently Asked Questions
 ---
-<section>
-<h1>This is the FAQ page.</h1>
+
+<section id="faq-hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+<h1>Frequently Asked Questions</h1>
+    </div>
+  </div>
+</section>
+<section id="faq-body">
+  <ul class="accordion">
+    <% data["questions"].each do |question| %>
+      <%= partial "question", locals: { question: question } %>
+    <% end %>
+  </ul>
 </section>
