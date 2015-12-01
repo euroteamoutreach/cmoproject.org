@@ -1,6 +1,21 @@
 ---
 title: Testimonies
 ---
-<section>
-<h1>Testimonies</h1>
+
+<section id="testimonies-hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>Testimonies</h1>
+      <p>Talk to the men who've been there.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonies-body">
+
+  <ul class="bullets">
+    <% data["testimonies"].each do |testimony| %>
+      <%= partial "partials/testimony", locals: { testimony: testimony } %>
+    <% end %>
+  </ul>
 </section>
