@@ -7,7 +7,7 @@
   $accordion-menu-sub-background: darken($accordion-menu-background, 5%);
   $accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6%);
   $accordion-menu-sub-hover: lighten($accordion-menu-sub-background, 2%);
-  $accordion-menu-list-padding: 1.5em $gutter 0.3em 0;
+  $accordion-menu-list-padding: 0 $gutter 0.3em 0;
 
   background-color: $accordion-menu-background;
   border-bottom: $accordion-menu-border;
@@ -23,14 +23,20 @@
     border-bottom: $accordion-menu-border;
     list-style: none;
 
+    .fa-li {
+      top: 0.35em;
+      font-size: 1.4em;
+      color: $accordion-menu-color;
+    }
+
     > a {
       font-size: 1.4em;
       color: $accordion-menu-color;
       display: block;
       padding: $accordion-menu-list-padding;
       padding-left: 0;
+      margin-top: 1.5em;
       text-decoration: none;
-      margin-left: -4px;
     }
 
     &:last-child {
