@@ -1,9 +1,10 @@
 //= require jquery
+
+//= require copyright
+//= require fade-in-box
+//= require faq
+//= require nav
+//= require nav-transparent
 //= require moment
 //= require scroll
-//= require transparent-nav
-//= require opaque-nav
-//= require fade-in-box
 //= require trailer-modal
-//= require copyright
-//= require faq
