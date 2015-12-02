@@ -10,15 +10,16 @@
     <title><%= full_title(current_page.data.title) %></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
-    <%= stylesheet_link_tag "all-index" %>
-    <%= javascript_include_tag  "all-index" %>
+    <%= favicon_tag "images/mm-favicon.png" %>
+    <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag "all" %>
+    <%= javascript_include_tag "nav-scroll" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "partials/transparent-nav" %>
-    <%= partial "partials/opaque-nav" %>
-    <%= yield %>
-    <%= partial "partials/universal-footer" %>
-    <%= partial "partials/copyright-footer" %>
+    <%= partial "nav" %>
+      <%= yield %>
+    <%= partial "universal-footer" %>
+    <%= partial "copyright-footer" %>
   </body>
 </html>

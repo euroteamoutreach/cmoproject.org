@@ -2,7 +2,7 @@
 title: Testimonies
 ---
 
-<section id="testimonies-hero">
+<section class="hero testimonies-hero">
   <div class="hero-inner">
     <div class="hero-copy">
       <h1>Testimonies</h1>
@@ -11,8 +11,8 @@ title: Testimonies
   </div>
 </section>
 
-<section id="testimonies-body">
-  <ul class="bullets">
+<section class="page-content">
+  <ul class="bullets testimonies-bullets">
     <% data["testimonies"].each do |testimony| %>
       <%= partial "testimony", locals: { testimony: testimony } %>
     <% end %>

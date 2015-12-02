@@ -8,7 +8,7 @@ $navigation-height: 70px;
 $navigation-active-link-color: transparentize($text-icon-white, 0.5);
 $horizontal-bar-mode: $large-screen;
 
-#transparent-nav {
+section.nav-transparent {
 
   background-color: $navigation-background;
   border-bottom: 1px solid $navigation-color;

@@ -10,16 +10,17 @@
     <title><%= full_title(current_page.data.title) %></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+    <%= favicon_tag "images/mm-favicon.png" %>
     <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= javascript_include_tag "all" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "partials/opaque-nav" %>
+    <%= partial "nav" %>
     <div id="content-wrapper">
       <%= yield %>
     </div>
-    <%= partial "partials/universal-footer" %>
-    <%= partial "partials/copyright-footer" %>
+    <%= partial "universal-footer" %>
+    <%= partial "copyright-footer" %>
   </body>
 </html>

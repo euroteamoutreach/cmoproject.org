@@ -1,0 +1,65 @@
+.hero {
+  $base-border-radius: 3px !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: #7F99BE;
+  $hero-background-bottom: #20392B;
+  $hero-color: $text-icon-white;
+  $gradient-angle: 10deg;
+  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+
+  &.testimonies-hero {
+    $hero-background-top: #1976D2;
+    $hero-background-bottom: #212121;
+    $hero-image: "testimony-guys.png";
+  }
+
+  &.faq-hero {
+    $hero-image: "";
+  }
+
+  @include background(url(image_path($hero-image)), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4em;
+
+
+  // .hero-logo img {
+  //   height: 4em;
+  //   margin-bottom: 1em;
+  // }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    margin: auto;
+    padding: 8em 2em 2em;
+    text-align: center;
+
+    .hero-copy {
+      text-align: center;
+
+      h1 {
+        color: $hero-color;
+        // font-size: 1.6em;
+        margin-bottom: 0.3em;
+
+        @include media($large-screen) {
+          // font-size: 1.8em;
+        }
+      }
+
+      p {
+        color: $hero-color;
+        // line-height: 1.4em;
+        // margin: 0 auto 3em auto;
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          // max-width: 40%;
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,12 @@
-<header id="transparent-nav" class="navigation" role="banner">
+<header class="navigation<%= add_visible_class %>" role="banner">
   <div class="navigation-wrapper">
-    <% link_to "/", class: "logo" do %>
-      <%= image_tag "cmo-logo-white.png" %>
-    <% end %>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu-tra">MENU</a>
+      <% link_to "/", class: "logo" do %>
+        <%= image_tag "cmo-logo-color.png" %>
+      <% end %>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     <nav role="navigation">
-      <ul id="js-navigation-menu-tra" class="navigation-menu show">
-        <li class="nav-link"><%= link_to "Overview", overview_smart_path(current_page.path), class: "scroll-on-page-link" %></li>
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><%= link_to "Overview", overview_smart_path, class: "scroll-on-page-link" %></li>
         <li class="nav-link"><%= link_to "FAQ", "/faq" %></li>
         <li class="nav-link"><%= link_to "Movie", "/movie" %></li>
         <li class="nav-link"><%= link_to "Testimonies", "/testimonies" %></li>

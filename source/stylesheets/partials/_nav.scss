@@ -8,7 +8,7 @@ $navigation-height: 70px;
 $navigation-active-link-color: transparentize($text-icon-white, 0.5);
 $horizontal-bar-mode: $large-screen;
 
-#opaque-nav {
+header.navigation {
 
   background-color: $navigation-background;
   border-bottom: 1px solid $light-gray;
@@ -16,7 +16,15 @@ $horizontal-bar-mode: $large-screen;
   width: 100%;
   z-index: 999;
   @include position(fixed);
-  @include transition(all 0.15s linear);
+  @include transform(translateY(-100%));
+
+  &.transition {
+    @include transition(all 0.15s linear);
+  }
+
+  &.is-visible {
+    @include transform(translateY(0));
+  }
 
   .navigation-wrapper {
     @include clearfix;
