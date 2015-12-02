@@ -1,6 +1,17 @@
 ---
-title: Apply for CMO
+title: Apply for CMO 2016
 ---
-<section>
-<h1>Apply</h1>
+
+<section class="hero apply-hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>Apply for CMO 2016</h1>
+    </div>
+  </div>
+</section>
+
+<section class="page-content">
+  <% data["apply-steps"].each do |step| %>
+    <%= partial "apply-step", locals: { step: step } %>
+  <% end %>
 </section>
