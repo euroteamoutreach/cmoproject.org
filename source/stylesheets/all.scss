@@ -5,8 +5,11 @@
 @import "base/base";   /* Bitters needs to be imported before Neat */
 @import "neat";
 
+@import "accordion";
+@import "hero";
+@import "icon-bullets";
+
 @import "partials/*";
-@import "navbar/opaque-nav";
 
 #content-wrapper {
   padding-top: 71px;

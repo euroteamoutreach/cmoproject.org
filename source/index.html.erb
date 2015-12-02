@@ -1,10 +1,32 @@
 ---
-layout: index-layout
+layout: home
 ---
+
+<section class="nav-transparent" role="banner">
+  <div class="navigation-wrapper">
+    <% link_to "/", class: "logo" do %>
+      <%= image_tag "cmo-logo-white.png" %>
+    <% end %>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu-tra">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu-tra" class="navigation-menu show">
+        <li class="nav-link"><%= link_to "Overview", overview_smart_path, class: "scroll-on-page-link" %></li>
+        <li class="nav-link"><%= link_to "FAQ", "/faq" %></li>
+        <li class="nav-link"><%= link_to "Movie", "/movie" %></li>
+        <li class="nav-link"><%= link_to "Testimonies", "/testimonies" %></li>
+        <li class="nav-link">
+          <% link_to "/apply", class: "button" do %>
+            <%= content_tag :button, "Apply" %>
+          <% end %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
 
 <section id="alpha">
   <h1>Carpathian Mountain Outreach</h1>
-  <p>&ldquo;Go ye therefore, and teach all nations...&rdquo;</p>
+  <p>&ldquo;Go ye therefore, and teach all nations...&rdquo; (Matthew 28:19)</p>
   <a class="scroll scroll-on-page-link" href="#call-to-men">
     <i class="fa fa-chevron-down fa-2x"></i>
   </a>

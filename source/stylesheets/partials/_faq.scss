@@ -1,0 +1,12 @@
+.faq {
+
+  section.page-content {
+    @include outer-container;
+    padding: 2em;
+    padding-left: 4em;
+
+    @include media($large-screen) {
+      padding: 4em 10em 4em 12em;
+    }
+  }
+}

@@ -8,6 +8,7 @@ page "/404.html", directory_index: false
 set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
+set :partials_dir, "partials"
 
 helpers do
   def full_title(page_title=nil)
@@ -20,11 +21,17 @@ helpers do
     end
   end
 
-  def overview_smart_path(path)
-    if !!(path =~ /index/)
+  def overview_smart_path
+    if !!(current_page.path =~ /index/)
       "#call-to-men"
     else
       "/#call-to-men"
+    end
+  end
+
+  def add_visible_class
+    unless !!(current_page.path =~ /index/)
+      " is-visible"
     end
   end
 end
