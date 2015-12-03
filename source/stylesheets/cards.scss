@@ -1,0 +1,97 @@
+.cards {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+.card {
+  $base-border-radius: 10px;
+  $outer-border-radius: 5px;
+  $base-background-color: white !default;
+  $base-spacing: 1.5em !default;
+  $card-border-color: $base-border-color;
+  $card-border: 1px solid $card-border-color;
+  $card-background: $text-icon-white;
+  $card-header-background: $card-background;
+  $card-margin: 1em;
+  $card-image-hover-opacity: 0.7;
+  $card-image-hover-color: #F8F2B4;
+
+  @include flex-basis(15em);
+  @include flex-grow(1);
+  @include transition (all 0.2s ease-in-out);
+  background-color: $card-background;
+  border-top-left-radius: $base-border-radius;
+  border-top-right-radius: $base-border-radius;
+  border-bottom-left-radius: $outer-border-radius;
+  border-bottom-right-radius: $outer-border-radius;
+  border: 0;
+  box-shadow: 0 2px 4px darken($light-gray, 10%);
+  cursor: pointer;
+  margin: 0 $card-margin $base-spacing $card-margin;
+  position: relative;
+
+
+  .card-image {
+    overflow: hidden;
+    height: 150px;
+    max-height: 150px;
+    // border-top-left-radius: $base-border-radius;
+    // border-top-right-radius: $base-border-radius;
+
+    img {
+      // @include transition (all 0.2s ease-in-out);
+      border-top-left-radius: $outer-border-radius;
+      border-top-right-radius: $outer-border-radius;
+      width: 100%;
+      // opacity: 1;
+    }
+  }
+
+  .card-header {
+    @include transition (all 0.2s ease-in-out);
+    background-color: $card-header-background;
+    border-bottom: $card-border;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    line-height: 1.5em;
+    padding: ($base-spacing / 3) ($base-spacing / 2);
+    text-align: left;
+
+    h5 {
+      margin: 0;
+    }
+  }
+
+  .card-copy {
+    // font-size: 0.9em;
+    // background-color: $card-background;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+    text-align: left;
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+
+    ul {
+      @extend %default-ul;
+    }
+  }
+
+  // &:focus,
+  // &:hover {
+  //   cursor: pointer;
+  //
+  //   img {
+  //     opacity: $card-image-hover-opacity;
+  //   }
+  // }
+  //
+  // &:active {
+  //   background-color: $card-background;
+  //
+  //   .card-header {
+  //     background-color: $card-background;
+  //   }
+  // }
+}
