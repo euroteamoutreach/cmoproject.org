@@ -1,0 +1,29 @@
+.apply {
+
+  section.page-content {
+    @include outer-container;
+    padding: 2em;
+
+    @include media($large-screen) {
+      padding: 4em 10em 4em 12em;
+    }
+
+    h5 {
+      margin: 0;
+    }
+
+    .announcements {
+      border-radius: $base-border-radius;
+      box-shadow: 0 2px 4px darken($light-gray, 10%);
+      background-color: $primary-blue-light;
+      text-align: center;
+      padding: 2em;
+      margin-bottom: 3em;
+
+      h6 {
+        color: $medium-gray;
+        margin: 0;
+      }
+    }
+  }
+}
