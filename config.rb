@@ -29,6 +29,14 @@ helpers do
     end
   end
 
+  def contact_text
+    if !!(current_page.path =~ /faq/)
+      "Didn't find your answer? Drop us a line!"
+    else
+      "Got a question about CMO? Drop us a line!"
+    end
+  end
+
   def add_visible_class
     unless !!(current_page.path =~ /index/)
       " is-visible"
