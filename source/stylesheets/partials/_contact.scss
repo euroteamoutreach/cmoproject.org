@@ -1,0 +1,27 @@
+section.contact-bar {
+  $contact-background: desaturate($accent-green, 10%);
+  $contact-link-color: $primary-blue-dark;
+
+  background-color: $contact-background;
+  padding: 3em;
+
+  .wrap {
+    @include outer-container;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 0.5em;
+      color: white;
+    }
+    a {
+      color: $contact-link-color;
+      font-size: 1.5em;
+      &:active,
+      &:focus,
+      &:hover {
+        color: shade($contact-link-color, 25%);
+        outline: none;
+      }
+    }
+  }
+}
