@@ -6,6 +6,7 @@ gem "middleman-livereload", "~> 3.1.0"
 gem "bitters"
 gem "bourbon"
 gem "neat"
+gem "nokogiri"
 
 source "https://rails-assets.org" do
   gem "rails-assets-jquery"

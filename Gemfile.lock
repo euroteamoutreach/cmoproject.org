@@ -149,6 +149,7 @@ DEPENDENCIES
   middleman (~> 3.4.0)
   middleman-livereload (~> 3.1.0)
   neat
+  nokogiri
   rails-assets-jquery!
   rails-assets-moment!
 
