@@ -1,21 +1,10 @@
-<header class="navigation<%= add_visible_class %>" role="banner">
-  <div class="navigation-wrapper">
-      <% link_to "/", class: "logo" do %>
-        <%= inline_svg "cmo-logo-simple.svg" %>
-      <% end %>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-    <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
-        <li class="nav-link"><%= link_to "Overview", overview_smart_path, class: "scroll-on-page-link" %></li>
-        <li class="nav-link"><%= link_to "FAQ", "/faq" %></li>
-        <li class="nav-link"><%= link_to "Movie", "/movie" %></li>
-        <li class="nav-link"><%= link_to "Testimonies", "/testimonies" %></li>
-        <li class="nav-link">
-          <% link_to "/apply", class: "button" do %>
-            <%= content_tag :button, "Apply" %>
-          <% end %>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<li class="nav-link"><%= link_to "Overview", overview_smart_path, class: "scroll-on-page-link" %></li>
+<li class="nav-link"><%= link_to "Movie", "/movie" %></li>
+<li class="nav-link"><%= link_to "Testimonies", "/testimonies" %></li>
+<li class="nav-link"><%= link_to "FAQ", "/faq" %></li>
+<li class="nav-link"><%= link_to "Downloads", "/downloads" %></li>
+<li class="nav-link">
+  <% link_to "/apply", class: "button" do %>
+    <%= content_tag :button, "Apply" %>
+  <% end %>
+</li>
