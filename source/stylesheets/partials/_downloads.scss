@@ -41,6 +41,10 @@
 
     button {
       background-color: $primary-blue-dark;
+      &:hover,
+      &:focus {
+        background-color: shade($primary-blue-dark, 20%);
+      }
     }
 
     .card {
