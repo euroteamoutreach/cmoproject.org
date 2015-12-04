@@ -2,29 +2,29 @@
 @import "hero";
 
 
-$hero-background-top: transparent;
-$hero-background-bottom: transparent;
-$hero-color: $primary-blue-dark;
+// $hero-background-top: transparent;
+// $hero-background-bottom: transparent;
+// $hero-color: $primary-blue-dark;
 
 .downloads {
 
   .hero {
+    $hero-image: "panorama-blur.png";
     @include background(url(image_path($hero-image)), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
     background-size: cover;
     background-position: top;
+    background-color: #324766;
     background-repeat: no-repeat;
-    padding: 2em;
-
-    .hero-inner > .hero-copy > h1 { color: $hero-color; }
-    .hero-inner > .hero-copy > p { color: $hero-color; }
-    .hero-inner {
-      padding: 2em;
-    }
+    padding: 4em;
   }
 
   section.page-content {
     @include outer-container;
-    padding: 0 4em 4em;
+    padding: 2em;
+
+    @include media($large-screen) {
+      padding: 4em;
+    }
   }
 
   .announcements {
