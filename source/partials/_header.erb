@@ -1,0 +1,13 @@
+<header class="navigation<%= add_visible_class %>" role="banner">
+  <div class="navigation-wrapper">
+      <% link_to "/", class: "logo" do %>
+        <%= inline_svg "cmo-logo-simple.svg" %>
+      <% end %>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <%= partial "nav" %>
+      </ul>
+    </nav>
+  </div>
+</header>
