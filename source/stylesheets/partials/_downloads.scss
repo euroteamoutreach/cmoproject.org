@@ -1,0 +1,98 @@
+@import "cards";
+@import "hero";
+
+
+$hero-background-top: transparent;
+$hero-background-bottom: transparent;
+$hero-color: $primary-blue-dark;
+
+.downloads {
+
+  .hero {
+    @include background(url(image_path($hero-image)), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 2em;
+
+    .hero-inner > .hero-copy > h1 { color: $hero-color; }
+    .hero-inner > .hero-copy > p { color: $hero-color; }
+    .hero-inner {
+      padding: 2em;
+    }
+  }
+
+  section.page-content {
+    @include outer-container;
+    padding: 0 4em 4em;
+  }
+
+  .announcements {
+    width: 75%;
+    margin: 2em auto 0 auto;
+  }
+
+  .cards {
+    $base-border-radius: 5px;
+    $card-border-color: $light-gray;
+    $card-border: 1px solid $card-border-color;
+    $card-background: white;
+    $card-header-background: transparent;
+
+    button {
+      background-color: $primary-blue-dark;
+    }
+
+    .card {
+      border-radius: $base-border-radius;
+      background-color: $card-background;
+
+      .download {
+        position: absolute;
+        bottom: 0em;
+        left: 0;
+        text-align: center;
+        margin-top: 0;
+        padding: 0.8em 0;
+        width: 100%;
+        border-top: $card-border;
+      }
+    }
+
+    .card-header {
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      background-color: $primary-blue-dark;
+      text-align: center;
+      border: 0;
+      width: 100%;
+
+      h5 {
+        font-size: 1.3em;
+        color: $text-icon-white;
+        font-weight: 400;
+      }
+    }
+
+    .card-image {
+      background-color: $dark-gray;
+      border: 0;
+      border-bottom: 3px solid $primary-blue-dark;
+      border-radius: 0;
+      height: initial;
+      padding: ($base-spacing / 2) ($base-spacing / 2);
+      text-align: center;
+      // width: 100%;
+
+      .svg-image {
+        width: 100px;
+        height: auto;
+      }
+    }
+
+    .card-copy {
+      text-align: left;
+      margin-bottom: 80px;
+    }
+  }
+}
