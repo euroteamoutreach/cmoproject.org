@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">
+    <h5><%= download["title"] %></h5>
+  </div>
+  <div class="card-image">
+    <%= inline_svg download["image"], class: "svg-image" %>
+  </div>
+  <div class="card-copy">
+    <%= download["body"] %>
+  </div>
+  <div class="download">
+    <button><i class="fa fa-fw fa-cloud-download"></i>&nbsp;Download</button>
+  </div>
+</div>

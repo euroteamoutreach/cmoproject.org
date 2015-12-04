@@ -6,13 +6,9 @@
 @import "neat";
 
 @import "accordion";
-@import "cards";
 @import "comments";
-@import "hero";
 @import "icon-bullets";
 
+@import "global";
 @import "partials/*";
 
-#content-wrapper {
-  padding-top: 71px;
-}

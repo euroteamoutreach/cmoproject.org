@@ -4,15 +4,15 @@
 
 - image: "cmo-info-pack-icon.svg"
   title: "2. Download the Info Pack and read it thoroughly."
-  body: "<p>Don't skim it, read it. Many of the questions you have, and several you probably haven't thought of yet, will be answered in this document. Reading the Info Pack is required before you apply, and we will expect you to know the things contained in it.</p><p><a href=\"#\"><i class=\"fa fa-cloud-download\"></i>&nbsp;Download Info Pack</a></p>"
+  body: "<p>Don't skim it, read it. Many of the questions you have, and several you probably haven't thought of yet, will be answered in this document. Reading the Info Pack is required before you apply, and we will expect you to know the things contained in it.</p><p><a href=\"#\"><i class=\"fa fa-fw fa-cloud-download\"></i>&nbsp;Download Info Pack</a></p>"
 
 - image: "cmo-app-icon.svg"
   title: "3. Download the Application and read it thoroughly."
-  body: "<p>Once you have finished reading the Info Pack, fill out the Application. Again, read all enclosed documents carefully.</p><p><a href=\"#\"><i class=\"fa fa-cloud-download\"></i>&nbsp;Download Application</a></p>"
+  body: "<p>Once you have finished reading the Info Pack, fill out the Application. Again, read all enclosed documents carefully.</p><p><a href=\"#\"><i class=\"fa fa-fw fa-cloud-download\"></i>&nbsp;Download Application</a></p>"
 
 - image: "cmo-rec-form-icon.svg"
   title: "4. Give the Applicant Recommendation Form to your pastor or church leader."
-  body: "<p>The Applicant Recommendation Form must be filled out by your pastor or church leader and mailed to our office separately. We cannot complete your application process until we receive this document.</p><p><a href=\"#\"><i class=\"fa fa-cloud-download\"></i>&nbsp;Download Applicant Recommendation Form</a></p>"
+  body: "<p>The Applicant Recommendation Form must be filled out by your pastor or church leader and mailed to our office separately. We cannot complete your application process until we receive this document.</p><p><a href=\"#\"><i class=\"fa fa-fw fa-cloud-download\"></i>&nbsp;Download Applicant Recommendation Form</a></p>"
 
 - image: "envelope.svg"
   title: "5. Mail your application, along with all applicable attachments to our main office."

@@ -1,0 +1,17 @@
+#content-wrapper {
+  padding-top: 71px;
+}
+
+.announcements {
+  border-radius: $base-border-radius;
+  box-shadow: 0 2px 4px darken($light-gray, 10%);
+  background-color: $primary-blue-light;
+  text-align: center;
+  padding: 2em;
+  margin-bottom: 3em;
+
+  h6 {
+    color: $medium-gray;
+    margin: 0;
+  }
+}
