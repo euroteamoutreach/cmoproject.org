@@ -13,7 +13,7 @@
     <%= favicon_tag "images/mm-favicon.png" %>
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag "all" %>
-    <%= javascript_include_tag "nav-scroll" %>
+    <%= yield_content :assets %>
   </head>
 
   <body class="<%= page_classes %>">

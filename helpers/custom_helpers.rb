@@ -17,6 +17,14 @@ module CustomHelpers
     end
   end
 
+  def home_smart_path
+    if !!(current_page.path =~ /index/)
+      "#"
+    else
+      "/"
+    end
+  end
+
   def contact_text
     if !!(current_page.path =~ /faq/)
       "Didn&rsquo;t find your answer? Drop us a line!"
