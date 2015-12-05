@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('header').addClass('transition');
+  $("header").addClass("transition");
 });
 
 $(window).scroll(function(){
@@ -7,11 +7,11 @@ $(window).scroll(function(){
   var scroll = $(window).scrollTop();
 
   if (scroll > 300 ) {
-    $('header').addClass('is-visible');
+    $("header").addClass("is-visible");
   }
 
   if (scroll <= 300 ) {
-    $('header').removeClass('is-visible');
+    $("header").removeClass("is-visible");
   }
 });
 

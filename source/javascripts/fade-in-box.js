@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var element = document.getElementById("js-fadeInElement");
-  $(element).addClass('js-fade-element-hide');
+  $(element).addClass("js-fade-element-hide");
 
   $(window).scroll(function() {
     if( $("#js-fadeInElement").length > 0 ) {
@@ -12,11 +12,11 @@ $(document).ready(function() {
       var distanceFromBottomToAppear = 200;
 
       if(elementTopToWindowBottom > distanceFromBottomToAppear) {
-        $(element).addClass('js-fade-element-show');
+        $(element).addClass("js-fade-element-show");
       }
       else if(elementTopToWindowBottom < 0) {
-        $(element).removeClass('js-fade-element-show');
-        $(element).addClass('js-fade-element-hide');
+        $(element).removeClass("js-fade-element-show");
+        $(element).addClass("js-fade-element-hide");
       }
     }
   });

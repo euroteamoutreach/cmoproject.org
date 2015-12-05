@@ -19,7 +19,7 @@ module CustomHelpers
 
   def contact_text
     if !!(current_page.path =~ /faq/)
-      "Didn't find your answer? Drop us a line!"
+      "Didn&rsquo;t find your answer? Drop us a line!"
     else
       "Got a question about CMO? Drop us a line!"
     end
