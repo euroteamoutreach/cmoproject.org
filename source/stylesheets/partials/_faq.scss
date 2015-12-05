@@ -17,6 +17,8 @@
     padding: 2em;
     padding-left: 4em;
 
+    a, i { color: $primary-blue-dark; }
+
     @include media($large-screen) {
       padding: 4em 10em 4em 12em;
     }
