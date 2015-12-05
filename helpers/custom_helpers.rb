@@ -1,4 +1,8 @@
 module CustomHelpers
+  def current_project_year
+    "2016"
+  end
+
   def full_title(page_title=nil)
     page_title ||= ""
     base_title = "Carpathian Mountain Outreach"
@@ -23,6 +27,18 @@ module CustomHelpers
     else
       "/"
     end
+  end
+
+  def info_pack_path
+    "/files/cmo-#{current_project_year}-info-pack.pdf"
+  end
+
+  def application_path
+    "/files/cmo-#{current_project_year}-application.pdf"
+  end
+
+  def rec_form_path
+    "/files/cmo-#{current_project_year}-rec-form.pdf"
   end
 
   def contact_text

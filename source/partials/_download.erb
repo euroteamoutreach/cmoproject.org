@@ -9,6 +9,8 @@
     <%= download["body"] %>
   </div>
   <div class="download">
-    <button><i class="fa fa-fw fa-cloud-download"></i>&nbsp;Download</button>
+    <% link_to send(%{#{download["path"]}}) do %>
+      <button><i class="fa fa-fw fa-cloud-download"></i>&nbsp;Download</button>
+    <% end %>
   </div>
 </div>

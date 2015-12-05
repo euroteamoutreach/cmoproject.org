@@ -1,6 +1,6 @@
 <footer class="footer" role="contentinfo">
   <div class="footer-logo">
-    <% link_to home_smart_path, id: "back-to-top" do %>
+    <% link_to home_smart_path, class: "back-to-top" do %>
       <%= inline_svg "cmo-logo-two-tone.svg", class: "logo" %>
     <% end %>
   </div>
@@ -20,9 +20,9 @@
     <ul>
       <li><h3>Downloads</h3></li>
       <li><%= link_to "View all", "/downloads" %></li>
-      <li><a href="javascript:void(0)">Info Pack</a></li>
-      <li><a href="javascript:void(0)">Application</a></li>
-      <li><a href="javascript:void(0)">Recommendation Form</a></li>
+      <li><%= link_to "Info Pack", info_pack_path %></li>
+      <li><%= link_to "Application", application_path %></li>
+      <li><%= link_to "Recommendation Form", rec_form_path %></li>
     </ul>
   </div>
  <hr>

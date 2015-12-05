@@ -5,6 +5,12 @@
   <div class="comment-content">
     <h1><%= step["title"] %></h1>
     <%= step["body"] %>
-    <!-- <p class="comment&#45;detail">Date or details about this post</p> -->
+    <% unless step["path"].empty? %>
+      <p>
+      <% link_to send(%{#{step["path"]}}) do %>
+        <i class="fa fa-fw fa-cloud-download"></i>&nbsp;<%= step["link_text"] %>
+      <% end %>
+      </p>
+    <% end %>
   </div>
 </div>
