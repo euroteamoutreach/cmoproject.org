@@ -21,7 +21,7 @@
       margin: 0;
     }
 
-    @include media ($phone) {
+    @include media ($phone-portrait) {
       p { font-size: 0.9em; }
     }
   }

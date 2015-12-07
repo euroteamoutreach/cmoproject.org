@@ -10,6 +10,24 @@
 
   h1 { color: $text-icon-white; }
 
+  @include media ($tablet-portrait) {
+    padding: 12em 2em 2em;
+
+    h1 { font-size: $h2-font-size; }
+  }
+
+  @include media ($phone-landscape) {
+    padding: 6em 3em 3em;
+
+    h1 { font-size: $h3-font-size; }
+  }
+
+  @include media ($phone-portrait) {
+    padding: 10em 2em 2em;
+
+    h1 { font-size: $h3-font-size; }
+  }
+
   .scroll {
     position: absolute;
     bottom: 2em;

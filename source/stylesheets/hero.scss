@@ -12,7 +12,7 @@ $hero-image: "";
   background-repeat: no-repeat;
   padding: 4em;
 
-  @include media ($phone) {
+  @include media ($phone-portrait) {
     padding: 2em 3em;
   }
 
@@ -23,7 +23,7 @@ $hero-image: "";
     padding: 4em 2em;
     text-align: center;
 
-    @include media ($phone) {
+    @include media ($phone-portrait) {
       padding: 1em;
     }
 
@@ -35,7 +35,7 @@ $hero-image: "";
         // font-size: 1.6em;
         margin-bottom: 0.3em;
 
-        @include media($phone) {
+        @include media($phone-portrait) {
           font-size: $h3-font-size;
         }
       }

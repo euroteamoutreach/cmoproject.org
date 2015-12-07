@@ -17,11 +17,11 @@
 
     a, i { color: $primary-blue-dark; }
 
-    @include media ($phone) {
+    @include media ($phone-portrait) {
       a, i { font-size: $base-font-size; }
     }
 
-    @include media ($phone) {
+    @include media ($phone-portrait) {
       ul.submenu p { font-size: 0.9em; }
     }
 
