@@ -1,6 +1,6 @@
 @import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails
 
-$visual-grid: false;
+$visual-grid: true;
 $visual-grid-color: cyan;
 $visual-grid-index: front;
 $visual-grid-opacity: 0.1;
@@ -17,4 +17,4 @@ $medium-screen: 768px;
 $small-screen: 480px;
 
 $tablet: new-breakpoint(max-width $medium-screen 8);
-$mobile: new-breakpoint(max-width $small-screen 4);
+$phone: new-breakpoint(max-width $small-screen 4);
