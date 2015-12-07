@@ -28,7 +28,7 @@ section.contact-bar {
       font-size: $h5-font-size;
 
       @include media ($phone) {
-        font-size: $h6-font-size;
+        font-size: $base-font-size;
       }
 
       &:active,
