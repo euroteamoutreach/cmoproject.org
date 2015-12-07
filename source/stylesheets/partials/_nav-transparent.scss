@@ -71,7 +71,6 @@ section.nav-transparent {
     margin: 0;
     padding: 0 1em;
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 1.5em;
 
     @include media ($horizontal-bar-mode) {
@@ -102,7 +101,6 @@ section.nav-transparent {
     @include media ($horizontal-bar-mode) {
       min-height: $navigation-height;
       float: right;
-      margin-right: -13px;
     }
   }
 
@@ -136,7 +134,7 @@ section.nav-transparent {
     text-align: center;
     width: 100%;
     z-index: 9999;
-    border-bottom: 1px solid $base-border-color;
+    border-bottom: 1px solid transparentize($dark-gray, 0.8);
 
     &:last-child {
       border-bottom: 0;
@@ -150,6 +148,10 @@ section.nav-transparent {
       width: auto;
       padding-right: 2em;
       border-bottom: 0;
+
+      &:last-child {
+        padding-right: 1em;
+      }
     }
 
     a {

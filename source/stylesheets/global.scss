@@ -14,5 +14,9 @@
   h6 {
     color: $medium-gray;
     margin: 0;
+
+    @include media ($phone-portrait) {
+      font-size: $base-font-size;
+    }
   }
 }

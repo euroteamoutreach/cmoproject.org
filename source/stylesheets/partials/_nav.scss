@@ -5,13 +5,14 @@ $navigation-background: $text-icon-white;
 $navigation-color: $action-color;
 $navigation-color-hover: $action-color;
 $navigation-height: 70px;
+$navigation-height-mobile: 55px;
 $navigation-active-link-color: transparentize($text-icon-white, 0.5);
-$horizontal-bar-mode: $large-screen;
+$horizontal-bar-mode: $medium-screen;
 
 header.navigation {
 
   background-color: $navigation-background;
-  min-height: $navigation-height;
+  min-height: $navigation-height-mobile;
   width: 100%;
   z-index: 999;
   box-shadow: 0 2px 10px -5px darken($medium-gray, 10%);
@@ -26,9 +27,13 @@ header.navigation {
     @include transform(translateY(0));
   }
 
+  @include media ($horizontal-bar-mode) {
+    min-height: $navigation-height;
+  }
+
   .navigation-wrapper {
     @include clearfix;
-    padding: 0 15px;
+    padding: 0;
     position: relative;
     z-index: 9999;
   }
@@ -36,8 +41,33 @@ header.navigation {
   .logo {
     float: left;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0;
+
+    @include media ($horizontal-bar-mode) {
+      width: 70px;
+      padding: 10px;
+    }
+
+    @include media ($tablet-portrait) {
+      width: 70px;
+      padding: 10px;
+    }
+
+    @include media ($phone-landscape) {
+      width: 55px;
+      padding: 7px;
+    }
+
+    @include media ($phone-portrait) {
+      width: 55px;
+      padding: 7px;
+    }
+
+    .svg-logo {
+      width: 100%;
+      height: auto;
+    }
   }
 
   // Mobile view
@@ -46,14 +76,22 @@ header.navigation {
     color: $navigation-color;
     display: block;
     float: right;
-    line-height: $navigation-height;
+    line-height: $navigation-height-mobile;
     margin: 0;
-    padding-right: 1em;
+    padding: 0 1em;
     text-decoration: none;
-    text-transform: uppercase;
+    font-size: 1.5em;
 
     @include media ($horizontal-bar-mode) {
       display: none;
+    }
+
+    @include media ($tablet-portrait) {
+      line-height: $navigation-height;
+    }
+
+    @include media ($phone-landscape) {
+      line-height: $navigation-height-mobile;
     }
 
     &:focus,
@@ -66,10 +104,11 @@ header.navigation {
 
   nav {
     float: none;
-    min-height: $navigation-height;
+    min-height: $navigation-height-mobile;
     z-index: 9999999;
 
     @include media ($horizontal-bar-mode) {
+      min-height: $navigation-height;
       float: right;
     }
   }
@@ -99,11 +138,16 @@ header.navigation {
   ul li.nav-link {
     background: $navigation-background;
     display: block;
-    line-height: $navigation-height;
+    line-height: $navigation-height-mobile;
     overflow: hidden;
     text-align: center;
     width: 100%;
     z-index: 9999;
+    border-bottom: 1px solid transparentize($navigation-color, 0.8);
+
+    &:last-child {
+      border-bottom: 0;
+    }
 
     @include media ($horizontal-bar-mode) {
       background: transparent;
@@ -112,6 +156,11 @@ header.navigation {
       text-decoration: none;
       width: auto;
       padding-right: 2em;
+      border-bottom: 0;
+
+      &:last-child {
+        padding-right: 1em;
+      }
     }
 
     a {
@@ -123,7 +172,9 @@ header.navigation {
       &:focus,
       &:hover {
         color: $navigation-color-hover;
-        border-bottom: 2px solid $navigation-color-hover;
+        @include media ($horizontal-bar-mode) {
+          border-bottom: 2px solid $navigation-color-hover;
+        }
       }
     }
 
