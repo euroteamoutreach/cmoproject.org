@@ -25,6 +25,15 @@
     a.scroll { display: none; }
   }
 
+  @include media ($phone-landscape) {
+    height: initial;
+    background-size: initial;
+    padding: 5em 1em 1em;
+
+    h2 { font-size: $h4-font-size; }
+    a.scroll { display: none; }
+  }
+
   div.wrap {
     @include outer-container;
     text-align: left;
@@ -37,6 +46,10 @@
     @include media ($phone-portrait) {
       display: none;
     }
+
+    @include media ($phone-landscape) {
+      display: none;
+    }
   }
 
   article {
@@ -44,6 +57,10 @@
 
     @include media ($phone-portrait) {
       @include span-columns(4);
+    }
+
+    @include media ($phone-landscape) {
+      @include span-columns(8);
     }
   }
 
