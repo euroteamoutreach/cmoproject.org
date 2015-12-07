@@ -32,7 +32,6 @@ $hero-image: "";
 
       h1 {
         color: $hero-color;
-        // font-size: 1.6em;
         margin-bottom: 0.3em;
 
         @include media($phone-portrait) {
@@ -42,12 +41,9 @@ $hero-image: "";
 
       p {
         color: $hero-color;
-        // line-height: 1.4em;
-        // margin: 0 auto 3em auto;
 
         @include media($large-screen) {
           font-size: 1.1em;
-          // max-width: 40%;
         }
       }
     }

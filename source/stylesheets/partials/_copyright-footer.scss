@@ -24,6 +24,10 @@
       margin-bottom: 0;
     }
 
+    @include media ($phone-portrait) {
+      font-size: 0.8em;
+    }
+
     a {
       color: inherit;
       text-decoration: underline;

@@ -1,6 +1,3 @@
-@import "cards";
-@import "hero";
-
 .downloads {
 
   .hero {
@@ -81,7 +78,6 @@
       height: initial;
       padding: ($base-spacing / 2) ($base-spacing / 2);
       text-align: center;
-      // width: 100%;
 
       .svg-image {
         width: 100px;
