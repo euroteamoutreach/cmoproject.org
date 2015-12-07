@@ -12,12 +12,20 @@ $hero-image: "";
   background-repeat: no-repeat;
   padding: 4em;
 
+  @include media ($phone-portrait) {
+    padding: 2em 3em;
+  }
+
   .hero-inner {
     @include outer-container;
     @include clearfix;
     margin: auto;
     padding: 4em 2em;
     text-align: center;
+
+    @include media ($phone-portrait) {
+      padding: 1em;
+    }
 
     .hero-copy {
       text-align: center;
@@ -27,8 +35,8 @@ $hero-image: "";
         // font-size: 1.6em;
         margin-bottom: 0.3em;
 
-        @include media($large-screen) {
-          // font-size: 1.8em;
+        @include media($phone-portrait) {
+          font-size: $h3-font-size;
         }
       }
 

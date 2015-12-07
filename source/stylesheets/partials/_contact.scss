@@ -5,6 +5,10 @@ section.contact-bar {
   background-color: $contact-background;
   padding: 3em;
 
+  @include media ($phone-portrait) {
+    padding: 2em;
+  }
+
   .wrap {
     @include outer-container;
     text-align: center;
@@ -12,10 +16,21 @@ section.contact-bar {
     h3 {
       margin-bottom: 0.5em;
       color: white;
+      font-size: $h3-font-size;
+
+      @include media ($phone-portrait) {
+        font-size: $h5-font-size;
+      }
     }
+
     a {
       color: $contact-link-color;
-      font-size: 1.5em;
+      font-size: $h5-font-size;
+
+      @include media ($phone-portrait) {
+        font-size: $base-font-size;
+      }
+
       &:active,
       &:focus,
       &:hover {
@@ -23,5 +38,6 @@ section.contact-bar {
         outline: none;
       }
     }
+
   }
 }

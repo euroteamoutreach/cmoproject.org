@@ -2,15 +2,22 @@
   height: 100vh;
   width: 100%;
   text-align: center;
-  // padding: 14em;
   background-image: url(image_path("cmo-men-sunset.jpg"));
   background-position: center center;
   background-size: cover;
   position: relative;
 
+  @include media ($phone-landscape) {
+    a.scroll { display: none; }
+  }
+
+  @include media ($phone-portrait) {
+    a.scroll { display: none; }
+  }
+
   .scroll {
     position: absolute;
-    bottom: 2em;
+    bottom: 1em;
     left: 0;
     margin-top: 0;
     width: 100%;
@@ -18,21 +25,11 @@
   }
 
   .fade-in-element {
-    $base-border-color: gainsboro !default;
-    $base-border-radius: 3px !default;
-    $base-background-color: transparentize($text-icon-white, 0.5) !default;
-    $base-line-height: 1.5em !default;
-    $base-spacing: 1.5em !default;
-    $dark-gray: #333 !default;
-    $base-font-color: $dark-gray !default;
-
     @include clearfix;
     background: transparentize($text-icon-white, 0.1);
     border-radius: $base-border-radius;
     border: 1px solid silver;
-    // box-shadow: 0 2px 2px transparentize(black, 0.8);
-    line-height: $base-line-height;
-    // margin-bottom: 4em;
+    // line-height: $base-line-height;
     padding: $base-spacing;
     text-align: center;
     width: 40%;
@@ -40,10 +37,47 @@
     top: 45%;
     left: 30%;
 
+    @include media ($tablet-portrait) {
+      width: 60%;
+      left: 20%;
+      top: 50%;
+      padding: 1em;
+
+      h2 { font-size: $h2-font-size; }
+      span.trigger-text {
+        font-size: 1.1em;
+      }
+      i.fa { line-height: 36px; }
+    }
+
+    @include media ($phone-landscape) {
+      width: 70%;
+      left: 15%;
+      top: 40%;
+      padding: 1em;
+
+      h2 { font-size: $h5-font-size; }
+      span.trigger-text {
+        font-size: 0.9em;
+      }
+    }
+
+    @include media ($phone-portrait) {
+      width: 90%;
+      left: 5%;
+      padding: 1em;
+
+      h2 { font-size: $h5-font-size; }
+      span.trigger-text {
+        font-size: 0.9em;
+      }
+    }
+
     p {
       color: $base-font-color;
       margin: 1em 0 0 0;
       line-height: $base-line-height;
+      font-size: 0.9em;
     }
 
     a {
@@ -76,9 +110,7 @@
   }
 
   .modal {
-    // $base-border-color: #dcdcdc !default;
     $base-border-radius: 3px !default;
-    // $base-background-color: #fff !default;
     $base-font-size: 1em !default;
     $base-line-height: 1.5em !default;
     $medium-screen: em(640) !default;
@@ -97,9 +129,6 @@
     }
 
     label img {
-      // border-radius: $modal-trigger-image-width / 2;
-      // display: block;
-      // max-width: $modal-trigger-image-width;
     }
 
     .modal-state {
@@ -115,8 +144,9 @@
       border-radius: $modal-trigger-image-width / 2;
       font-weight: normal;
 
+
       .trigger-text, i.fa {
-        line-height: 40px;
+        line-height: 37px;
       }
       i.fa {
         vertical-align: middle;
@@ -182,14 +212,28 @@
       position: relative;
       width: 95%;
 
-      @include media($medium-screen) {
+      @include media($tablet-landscape) {
         max-height: 95%;
-        padding: $modal-padding;
-        width: 60%;
+        width: 85%;
+        padding: 1em;
+      }
+
+      @include media($phone-landscape) {
+        max-height: 95%;
+        width: 85%;
+        padding: 1em;
+      }
+
+      @include media($phone-portrait) {
+        max-height: 95%;
+        width: 95%;
+        padding: 1em;
       }
 
       @include media($large-screen) {
-        width: 60%;
+        max-height: 95%;
+        padding: $modal-padding / 2;
+        width: 70%;
       }
 
       h1 {

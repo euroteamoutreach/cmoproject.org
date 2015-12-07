@@ -1,6 +1,7 @@
 ---
 layout: home
 ---
+
 <% content_for :assets do %>
   <%= javascript_include_tag "nav-scroll", "top" %>
 <% end %>
@@ -8,9 +9,9 @@ layout: home
 <section class="nav-transparent" role="banner">
   <div class="navigation-wrapper">
     <% link_to "/", class: "logo" do %>
-      <%= inline_svg "cmo-logo-two-tone.svg" %>
+      <%= inline_svg "cmo-logo-two-tone.svg", class: "svg-logo" %>
     <% end %>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu-tra">MENU</a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu-tra"><i class="fa fa-bars"></i></a>
     <nav role="navigation">
       <ul id="js-navigation-menu-tra" class="navigation-menu show">
         <%= partial "nav-links" %>
@@ -30,7 +31,7 @@ layout: home
 <section id="call-to-men">
   <div class="wrap">
     <aside>
-      <%= inline_svg "cmo-logo-full.svg" %>
+      <%= inline_svg "cmo-logo-full.svg", class: "svg-logo" %>
     </aside>
     <article>
       <h2>A Call to Men</h2>

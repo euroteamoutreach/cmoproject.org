@@ -26,6 +26,13 @@
   .comment-image {
     padding-right: $comment-gutter;
 
+    @include media ($phone-portrait) {
+      .svg-icon {
+        width: 50px;
+        height: auto;
+      }
+    }
+
     > img {
       background: $comment-background;
       border-radius: $base-border-radius;

@@ -5,21 +5,26 @@ $navigation-background: transparent;
 $navigation-color: transparentize($text-icon-white, 0.3);
 $navigation-color-hover: $text-icon-white;
 $navigation-height: 70px;
+$navigation-height-mobile: 55px;
 $navigation-active-link-color: transparentize($text-icon-white, 0.5);
-$horizontal-bar-mode: $large-screen;
+$horizontal-bar-mode: $medium-screen;
 
 section.nav-transparent {
 
   background-color: $navigation-background;
   border-bottom: 1px solid $navigation-color;
-  min-height: $navigation-height;
+  min-height: $navigation-height-mobile;
   width: 100%;
   z-index: 999;
   position: absolute;
 
+  @include media ($horizontal-bar-mode) {
+    min-height: $navigation-height;
+  }
+
   .navigation-wrapper {
     @include clearfix;
-    padding: 0 15px;
+    padding: 0;
     position: relative;
     z-index: 9999;
   }
@@ -27,8 +32,33 @@ section.nav-transparent {
   .logo {
     float: left;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0;
+
+    @include media ($horizontal-bar-mode) {
+      width: 70px;
+      padding: 10px;
+    }
+
+    @include media ($tablet-portrait) {
+      width: 70px;
+      padding: 10px;
+    }
+
+    @include media ($phone-landscape) {
+      width: 55px;
+      padding: 7px;
+    }
+
+    @include media ($phone-portrait) {
+      width: 55px;
+      padding: 7px;
+    }
+
+    .svg-logo {
+      width: 100%;
+      height: auto;
+    }
   }
 
   // Mobile view
@@ -37,14 +67,22 @@ section.nav-transparent {
     color: $navigation-color;
     display: block;
     float: right;
-    line-height: $navigation-height;
+    line-height: $navigation-height-mobile;
     margin: 0;
-    padding-right: 1em;
+    padding: 0 1em;
     text-decoration: none;
-    text-transform: uppercase;
+    font-size: 1.5em;
 
     @include media ($horizontal-bar-mode) {
       display: none;
+    }
+
+    @include media ($tablet-portrait) {
+      line-height: $navigation-height;
+    }
+
+    @include media ($phone-landscape) {
+      line-height: $navigation-height-mobile;
     }
 
     &:focus,
@@ -57,10 +95,11 @@ section.nav-transparent {
 
   nav {
     float: none;
-    min-height: $navigation-height;
+    min-height: $navigation-height-mobile;
     z-index: 9999999;
 
     @include media ($horizontal-bar-mode) {
+      min-height: $navigation-height;
       float: right;
     }
   }
@@ -90,11 +129,16 @@ section.nav-transparent {
   ul li.nav-link {
     background: transparentize($text-icon-white, 0.1);
     display: block;
-    line-height: $navigation-height;
+    line-height: $navigation-height-mobile;
     overflow: hidden;
     text-align: center;
     width: 100%;
     z-index: 9999;
+    border-bottom: 1px solid transparentize($dark-gray, 0.8);
+
+    &:last-child {
+      border-bottom: 0;
+    }
 
     @include media ($horizontal-bar-mode) {
       background: $navigation-background;
@@ -103,6 +147,11 @@ section.nav-transparent {
       text-decoration: none;
       width: auto;
       padding-right: 2em;
+      border-bottom: 0;
+
+      &:last-child {
+        padding-right: 1em;
+      }
     }
 
     a {
@@ -117,7 +166,6 @@ section.nav-transparent {
 
       &:focus,
       &:hover {
-        border-bottom: 2px solid $dark-gray;
         @include media ($horizontal-bar-mode) {
           color: $navigation-color-hover;
           border: 0;
