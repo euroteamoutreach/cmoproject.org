@@ -21,7 +21,15 @@
       a, i { font-size: $base-font-size; }
     }
 
+    @include media ($phone-landscape) {
+      a, i { font-size: $base-font-size; }
+    }
+
     @include media ($phone-portrait) {
+      ul.submenu p { font-size: 0.9em; }
+    }
+
+    @include media ($phone-landscape) {
       ul.submenu p { font-size: 0.9em; }
     }
 

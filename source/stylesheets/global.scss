@@ -1,6 +1,10 @@
 #content-wrapper {
   padding-top: 69px;
   background-color: $base-background-color;
+
+  @include media ($phone-landscape) {
+    padding-top: 54px;
+  }
 }
 
 .announcements {
