@@ -1,5 +1,3 @@
-@import "hero";
-
 .faq {
 
   .hero {
@@ -18,6 +16,14 @@
     padding-left: 4em;
 
     a, i { color: $primary-blue-dark; }
+
+    @include media ($phone) {
+      a, i { font-size: $base-font-size; }
+    }
+
+    @include media ($phone) {
+      ul.submenu p { font-size: 0.9em; }
+    }
 
     @include media($large-screen) {
       padding: 4em 10em 4em 12em;
