@@ -1,14 +1,28 @@
 #call-to-men {
   width: 100%;
   height: 100vh;
-  padding: 9em 6em 6em 6em;
+  padding: 9em 6em 6em;
   background-size: cover;
   text-align: center;
   position: relative;
   background-color: $base-background-color;
 
-  p {
-    font-size: 2.2vmin;
+    .svg-logo {
+      width: 100%;
+      height: auto;
+    }
+
+  @include media ($tablet-portrait) {
+    padding: 9em 3em 3em;
+  }
+
+  @include media ($phone-portrait) {
+    height: initial;
+    background-size: initial;
+    padding: 5em 1em 1em;
+
+    h2 { font-size: $h4-font-size; }
+    a.scroll { display: none; }
   }
 
   div.wrap {
@@ -19,12 +33,18 @@
   aside {
     @include span-columns(4);
     padding-right: 1em;
-    // border: 1px solid red;
+
+    @include media ($phone-portrait) {
+      display: none;
+    }
   }
 
   article {
     @include span-columns(8);
-    // border: 1px solid red;
+
+    @include media ($phone-portrait) {
+      @include span-columns(4);
+    }
   }
 
   .scroll {
