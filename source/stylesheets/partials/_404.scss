@@ -1,0 +1,39 @@
+.x404 {
+  .not-found {
+    padding: 5em;
+    text-align: center;
+
+    @include media ($tablet-portrait) {
+      padding: 2em;
+    }
+
+    .svg-image {
+      margin-bottom: 2em;
+
+      @include media ($tablet-portrait) {
+        margin-bottom: 1em;
+        width: 60%;
+        height: 60%;
+      }
+
+      @include media ($phone-portrait) {
+        margin-bottom: 1em;
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+    h1 {
+      color: $primary-blue;
+
+      @include media ($tablet-portrait) {
+        font-size: $h3-font-size;
+      }
+
+      @include media ($phone-portrait) {
+        font-size: $h4-font-size;
+      }
+    }
+  }
+}
