@@ -47,12 +47,14 @@ section.nav-transparent {
 
     @include media ($phone-landscape) {
       width: 55px;
-      padding: 7px;
+      padding-top: 3px;
+      padding-left: 7px;
     }
 
     @include media ($phone-portrait) {
       width: 55px;
-      padding: 7px;
+      padding-top: 3px;
+      padding-left: 7px;
     }
 
     .svg-logo {
