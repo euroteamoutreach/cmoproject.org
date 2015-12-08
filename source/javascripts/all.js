@@ -8,3 +8,5 @@
 //= require moment
 //= require scroll
 //= require trailer-modal
+//= require animate
+
