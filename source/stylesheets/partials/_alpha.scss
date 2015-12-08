@@ -22,6 +22,7 @@
     padding: 6em 3em 3em;
 
     h1 { font-size: $h3-font-size; }
+    p { display: none; }
   }
 
   @include media ($phone-portrait) {
@@ -29,6 +30,7 @@
     padding: 8em 2em 2em;
 
     h1 { font-size: $h3-font-size; }
+    p { display: none; }
   }
 
   .scroll {
