@@ -23,8 +23,12 @@ $hero-image: "";
     padding: 4em 2em;
     text-align: center;
 
+    @include media ($phone-landscape) {
+      padding: 0;
+    }
+
     @include media ($phone-portrait) {
-      padding: 1em;
+      padding: 0;
     }
 
     .hero-copy {
@@ -33,6 +37,10 @@ $hero-image: "";
       h1 {
         color: $hero-color;
         margin-bottom: 0.3em;
+
+        @include media($phone-landscape) {
+          font-size: $h3-font-size;
+        }
 
         @include media($phone-portrait) {
           font-size: $h3-font-size;

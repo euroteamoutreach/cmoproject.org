@@ -1,7 +1,6 @@
 #call-to-men {
   width: 100%;
-  height: 100vh;
-  padding: 8em 5em 5em;
+  padding: 9em 5em 5em;
   background-size: cover;
   text-align: center;
   position: relative;
@@ -9,17 +8,19 @@
 
     .svg-logo {
       width: 100%;
-      height: auto;
+      height: 100%;
       border-radius: 50%;
     }
+
+  @include media ($tablet-landscape) {
+    padding: 9em 3em 3em;
+  }
 
   @include media ($tablet-portrait) {
     padding: 9em 3em 3em;
   }
 
   @include media ($phone-portrait) {
-    height: initial;
-    background-size: initial;
     padding: 5em 1em 1em;
 
     h2 { font-size: $h4-font-size; }

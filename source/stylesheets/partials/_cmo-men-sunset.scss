@@ -1,11 +1,23 @@
 #cmo-men-sunset {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   text-align: center;
   background-image: url(image_path("cmo-men-sunset.jpg"));
   background-position: center center;
   background-size: cover;
   position: relative;
+
+  @include media ($tablet-landscape) {
+    height: 90vh;
+    padding: 9em 3em 3em;
+    a.scroll { display: none; }
+  }
+
+  @include media ($tablet-portrait) {
+    height: 90vh;
+    padding: 9em 3em 3em;
+    a.scroll { display: none; }
+  }
 
   @include media ($phone-landscape) {
     a.scroll { display: none; }
