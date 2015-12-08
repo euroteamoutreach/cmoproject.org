@@ -1,5 +1,5 @@
 $(document).ready(function() {
   setTimeout(function(){
     $(".fa-chevron-down").addClass("shake");
-  }, 2000);
+  }, 5000);
 });
