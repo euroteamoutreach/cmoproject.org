@@ -1,6 +1,6 @@
 # cmoproject.org
 
-[cmoproject.org]() is the web site for Carpathian Mountain Outreach, a short-term missions project hosted annually by [Euro Team Outreach, Inc.]() in Western Ukraine.
+[cmoproject.org](http://cmoproject.org/) is the web site for Carpathian Mountain Outreach, a short-term missions project hosted annually by [Euro Team Outreach, Inc.](http://www.euroteamoutreach.org/) in Western Ukraine.
 
 This site was built using [Middleman](https://middlemanapp.com/).
 
