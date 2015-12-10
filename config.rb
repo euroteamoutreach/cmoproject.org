@@ -14,7 +14,15 @@ configure :build do
   activate :gzip
   activate :minify_css
   activate :minify_javascript
+
+  set :url_root, "http://cmoproject.org"
+  activate :search_engine_sitemap
+
   activate :asset_hash
+  activate :asset_host
+  set :asset_host do
+    "//d3fljjvmwfqmg4.cloudfront.net"
+  end
 end
 
 activate :dotenv

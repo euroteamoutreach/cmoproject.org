@@ -16,6 +16,7 @@ end
 gem "middleman-dotenv", "~> 1.0"
 gem "middleman-s3_sync", "~>3.3.0"
 gem "unf"
+gem "middleman-search_engine_sitemap"
 
 # Temporary workaround for fog error that blows up s3_sync
 gem "fog-core", "1.34.0"
