@@ -87,4 +87,8 @@ module CustomHelpers
       doc
     end
   end
+
+  def image_url(filename)
+    URI.join(data.site.url, image_path(filename))
+  end
 end
