@@ -25,6 +25,7 @@
 
   .comment-image {
     padding-right: $comment-gutter;
+    padding-top: 3px;
 
     @include media ($phone-portrait) {
       .svg-icon {
