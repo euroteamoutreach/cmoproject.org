@@ -29,3 +29,10 @@ activate :dotenv
 activate :s3_sync do |s3|
   s3.prefer_gzip = true
 end
+
+activate :cloudfront do |cf|
+  cf.access_key_id = ENV["AWS_ACCESS_KEY_ID"]
+  cf.secret_access_key = ENV["AWS_SECRET_ACCESS_KEY"]
+  cf.distribution_id = "E1KD5G5248WE8H"
+  cf.filter = /\.html$/i
+end
