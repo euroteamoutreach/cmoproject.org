@@ -4,6 +4,8 @@
 
 This site was built using [Middleman](https://middlemanapp.com/).
 
+![cmoproject.org screenshot](https://s3.amazonaws.com/images.cmoproject.org/cmoproject-screenshot.jpg)
+
 ### Setup
 
 To get started, clone the repo, cd into it, and run the setup script.
@@ -25,7 +27,7 @@ Check out the [documentation](https://middlemanapp.com/basics/install/) for more
 
 ### Deployment
 
-cmoproject.org is currently deployed on Amazon S3. [Detailed instructions](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) are available from Amazon.
+cmoproject.org is currently deployed on Amazon S3. [Detailed instructions](http://docs.aws.amazon.com/gettingstarted/latest/swh/website-hosting-intro.html) are available from Amazon.
 
 ### Reference
 
