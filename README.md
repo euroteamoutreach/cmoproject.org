@@ -33,7 +33,7 @@ Many thanks to Chris Toomey of thoughtbot for his [excellent introductory video]
 
 ### Logo
 
-![Carpathian Mountain Outreach](https://github.com/joshukraine/cmoproject.org/blob/master/source/images/cmo-logo-full-200.png)
+![Carpathian Mountain Outreach](https://s3.amazonaws.com/images.cmoproject.org/cmo-logo.png)
 
 The Carpathian Mountain Outreach logo is a trademark of [Euro Team Outreach, Inc.](http://www.euroteamoutreach.org/)
 

@@ -9,9 +9,10 @@
 
 <title><%= full_title(current_page.data.title) %></title>
 
-<%= tag "meta", property: "og:title", content: data.site.title %>
 <%= tag "meta", property: "og:url", content: data.site.url %>
-<%= tag "meta", property: "og:image", content: image_url("cmo-logo-full.png") %>
+<%= tag "meta", property: "og:title", content: data.site.title %>
+<%= tag "meta", property: "og:description", content: "#{page_description}" %>
+<%= tag "meta", property: "og:image", content: "https://s3.amazonaws.com/images.cmoproject.org/cmo-logo.png" %>
 
 <%= favicon_tag "images/cmo-favicon.png" %>
 <%= tag "link", rel: "apple-touch-icon", href: "images/apple-touch-icon.png" %>
