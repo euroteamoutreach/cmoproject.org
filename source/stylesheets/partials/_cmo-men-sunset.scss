@@ -175,7 +175,7 @@
       z-index: 99999999999;
 
       @include media($large-screen) {
-        padding-top: 8em;
+        padding-top: 1em;
       }
 
       .modal-bg {
