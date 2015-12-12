@@ -17,8 +17,8 @@
   link_text: "Download Application"
 
 - image: "cmo-rec-form-icon.svg"
-  title: "4. Give the Applicant Recommendation Form to your pastor or church leader."
-  body: "<p>The Applicant Recommendation Form must be filled out by your pastor or church leader and mailed to our office separately. We cannot complete your application process until we receive this document.</p>"
+  title: "4. Give the Recommendation Form to your pastor or church leader."
+  body: "<p>The Recommendation Form must be filled out by your pastor or church leader and mailed to our office separately. We cannot complete your application process until we receive this document.</p>"
   path: "rec_form_path"
   link_text: "Download Recommendation Form"
 
