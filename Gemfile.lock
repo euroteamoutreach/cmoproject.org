@@ -53,7 +53,7 @@ GEM
     ffi (1.9.10)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
-    fog (1.36.0)
+    fog (1.37.0)
       fog-aliyun (>= 0.1.0)
       fog-atmos
       fog-aws (>= 0.6.0)
@@ -75,10 +75,10 @@ GEM
       fog-terremark
       fog-vmfusion
       fog-voxel
+      fog-vsphere (>= 0.4.0)
       fog-xenserver
       fog-xml (~> 0.1.1)
       ipaddress (~> 0.5)
-      nokogiri (~> 1.5, >= 1.5.11)
     fog-aliyun (0.1.0)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
@@ -133,7 +133,7 @@ GEM
       fog-core
       fog-json
       fog-xml
-    fog-sakuracloud (1.5.0)
+    fog-sakuracloud (1.7.3)
       fog-core
       fog-json
     fog-serverlove (0.1.2)
@@ -154,6 +154,9 @@ GEM
     fog-voxel (0.1.0)
       fog-core
       fog-xml
+    fog-vsphere (0.4.0)
+      fog-core
+      rbvmomi (~> 1.8)
     fog-xenserver (0.2.2)
       fog-core
       fog-xml
@@ -236,7 +239,7 @@ GEM
     neat (1.7.2)
       bourbon (>= 4.0)
       sass (>= 3.3)
-    nokogiri (1.6.7)
+    nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     padrino-helpers (0.12.5)
       i18n (~> 0.6, >= 0.6.7)
@@ -255,6 +258,10 @@ GEM
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    rbvmomi (1.8.2)
+      builder
+      nokogiri (>= 1.4.1)
+      trollop
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -283,6 +290,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
+    trollop (2.1.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.15)
