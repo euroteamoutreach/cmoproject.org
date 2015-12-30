@@ -22,6 +22,8 @@ gem "unf"
 group :development do
   gem "rspec"
   gem "capybara"
+  gem "capybara-webkit"
+  gem "launchy"
 end
 
 # Temporary workaround for fog error that blows up s3_sync
