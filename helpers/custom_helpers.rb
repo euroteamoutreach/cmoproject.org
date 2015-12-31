@@ -13,16 +13,16 @@ module CustomHelpers
     end
   end
 
-  def overview_smart_path
-    if !!(current_page.path =~ /index/)
+  def overview_smart_path(path)
+    if !!(path =~ /index/)
       "#call-to-men"
     else
       "/#call-to-men"
     end
   end
 
-  def home_smart_path
-    if !!(current_page.path =~ /index/)
+  def home_smart_path(path)
+    if !!(path =~ /index/)
       "#"
     else
       "/"

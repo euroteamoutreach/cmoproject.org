@@ -1,13 +1,13 @@
 <footer class="footer" role="contentinfo">
   <div class="footer-logo">
-    <% link_to home_smart_path, class: "back-to-top" do %>
+    <% link_to home_smart_path(current_page.path), class: "back-to-top" do %>
       <%= inline_svg "cmo-logo-two-tone.svg", class: "logo" %>
     <% end %>
   </div>
   <div class="footer-links">
     <ul>
       <li><h3>Get to know CMO</h3></li>
-      <li><%= link_to "Overview", overview_smart_path %></li>
+      <li><%= link_to "Overview", overview_smart_path(current_page.path) %></li>
       <li><%= link_to "Movie", "/movie" %></li>
       <li><%= link_to "FAQ", "/faq" %></li>
       <li><%= link_to "Testimonies", "/testimonies" %></li>
