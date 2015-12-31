@@ -1,0 +1,4 @@
+language: ruby
+install: bundle install
+before_script: bin/rspec
+script: bundle exec middleman build --clean
