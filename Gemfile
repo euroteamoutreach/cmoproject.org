@@ -22,7 +22,6 @@ gem "unf"
 group :development do
   gem "rspec"
   gem "capybara"
-  gem "capybara-webkit"
   gem "launchy"
 end
 

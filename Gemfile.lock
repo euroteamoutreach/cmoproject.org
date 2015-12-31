@@ -25,9 +25,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    capybara-webkit (1.7.1)
-      capybara (>= 2.3.0, < 2.6.0)
-      json
     chunky_png (1.3.5)
     coffee-script (2.4.1)
       coffee-script-source
@@ -317,7 +314,6 @@ DEPENDENCIES
   bitters
   bourbon
   capybara
-  capybara-webkit
   fog-core (= 1.34.0)
   launchy
   middleman (~> 3.4.0)
