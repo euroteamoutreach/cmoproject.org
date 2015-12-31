@@ -9,6 +9,7 @@ set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
 set :partials_dir, "partials"
+set :debug_assets, true
 
 configure :build do
   activate :gzip

@@ -19,5 +19,11 @@ gem "middleman-search_engine_sitemap"
 gem "middleman-cloudfront"
 gem "unf"
 
+group :development do
+  gem "rspec"
+  gem "capybara"
+  gem "launchy"
+end
+
 # Temporary workaround for fog error that blows up s3_sync
 gem "fog-core", "1.34.0"
