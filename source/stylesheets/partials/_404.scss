@@ -25,7 +25,8 @@
     }
 
     h1 {
-      color: $primary-blue;
+      // color: $primary-blue;
+      color: #f00;
 
       @include media ($tablet-portrait) {
         font-size: $h3-font-size;
