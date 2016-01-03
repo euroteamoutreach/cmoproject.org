@@ -134,7 +134,7 @@ GEM
       fog-core
       fog-json
       fog-xml
-    fog-sakuracloud (1.7.3)
+    fog-sakuracloud (1.7.5)
       fog-core
       fog-json
     fog-serverlove (0.1.2)
@@ -257,8 +257,8 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rails-assets-jquery (2.1.4)
-    rails-assets-moment (2.10.6)
-    rb-fsevent (0.9.6)
+    rails-assets-moment (2.11.0)
+    rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rbvmomi (1.8.2)
