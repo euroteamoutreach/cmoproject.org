@@ -10,11 +10,10 @@ This site was built using [Middleman](https://middlemanapp.com/).
 
 ### Setup
 
-To get started, clone the repo, cd into it, and run the setup script.
+To get started, clone the repo, cd into it, and install the gems.
 
 ```sh
-% cd cmoproject.org
-% bin/setup
+% bundle install
 ```
 
 ### Development

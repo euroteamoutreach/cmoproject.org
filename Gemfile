@@ -13,7 +13,6 @@ source "https://rails-assets.org" do
   gem "rails-assets-moment"
 end
 
-gem "middleman-dotenv", "~> 1.0"
 gem "middleman-s3_sync", "~>3.3.0"
 gem "middleman-search_engine_sitemap"
 gem "middleman-cloudfront"

@@ -26,7 +26,6 @@ configure :build do
   end
 end
 
-# activate :dotenv
 activate :s3_sync do |s3|
   s3.bucket = "cmoproject.org"
   s3.aws_access_key_id = ENV["AWS_ACCESS_KEY_ID"]
