@@ -11,5 +11,5 @@ env:
 
 branches:
   only:
-    - master
-    - travis-s3-deploy
+  - master
+  - travis-s3-deploy
