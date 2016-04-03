@@ -1,3 +1,5 @@
+var $ = require("jquery");
+
 $(document).ready(function() {
   var menuToggle = $("#js-mobile-menu").unbind();
   $("#js-navigation-menu").removeClass("show");

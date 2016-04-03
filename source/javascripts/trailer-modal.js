@@ -1,3 +1,5 @@
+var $ = require("jquery");
+
 $(function() {
   $("#modal-1").on("change", function() {
     if ($(this).is(":checked")) {

@@ -1,3 +1,5 @@
+var $ = require("jquery");
+
 $(document).ready(function() {
   $("header").addClass("transition");
 });

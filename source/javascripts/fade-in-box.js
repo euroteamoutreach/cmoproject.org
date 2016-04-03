@@ -1,3 +1,5 @@
+var $ = require("jquery");
+
 $(document).ready(function() {
   var element = document.getElementById("js-fadeInElement");
   $(element).addClass("js-fade-element-hide");

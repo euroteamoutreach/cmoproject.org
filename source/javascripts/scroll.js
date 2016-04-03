@@ -1,3 +1,5 @@
+var $ = require("jquery");
+
 (function (jQuery) {
   jQuery.mark = {
     jump: function (options) {
