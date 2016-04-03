@@ -1,22 +1,18 @@
 source "https://rubygems.org"
 
-gem "middleman", "~> 3.4.0"
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman", "~> 4.0"
+gem "middleman-livereload", "~> 3.4"
+gem "middleman-autoprefixer", "~> 2.6"
 
-gem "bitters", "~> 1.0"
-gem "bourbon", "~> 4.0"
+gem "sassc", "~> 1.8"
+gem "bourbon", "~> 4.2"
 gem "neat", "~> 1.7"
+gem "bitters", "~> 1.2.0"
 gem "nokogiri", "~> 1.6"
 
-source "https://rails-assets.org" do
-  gem "rails-assets-jquery", "~> 2.0"
-  gem "rails-assets-moment", "~> 2.0"
-end
-
-gem "middleman-s3_sync", "~> 3.3.0"
-gem "middleman-search_engine_sitemap", "~> 1.0"
-gem "middleman-cloudfront", "~> 0.2"
-gem "unf"
+gem "middleman-s3_sync", "~> 4.0"
+gem "middleman-search_engine_sitemap", "~> 1.4"
+gem "unf", "~> 0.1.4"
 
 group :development do
   gem "rspec"
