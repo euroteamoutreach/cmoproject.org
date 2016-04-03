@@ -307,20 +307,20 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bitters
-  bourbon
+  bitters (~> 1.0)
+  bourbon (~> 4.0)
   capybara
   fog-core (= 1.34.0)
   launchy
   middleman (~> 3.4.0)
-  middleman-cloudfront
+  middleman-cloudfront (~> 0.2)
   middleman-livereload (~> 3.1.0)
   middleman-s3_sync (~> 3.3.0)
-  middleman-search_engine_sitemap
-  neat
-  nokogiri
-  rails-assets-jquery!
-  rails-assets-moment!
+  middleman-search_engine_sitemap (~> 1.0)
+  neat (~> 1.7)
+  nokogiri (~> 1.6)
+  rails-assets-jquery (~> 2.0)!
+  rails-assets-moment (~> 2.0)!
   rspec
   unf
 
