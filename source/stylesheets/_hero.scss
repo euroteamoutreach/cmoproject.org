@@ -3,10 +3,8 @@ $hero-background-top: #1976D2;
 $hero-background-bottom: #212121;
 $hero-color: $text-icon-white;
 $gradient-angle: 10deg;
-$hero-image: "";
 
 .hero {
-  @include background(url(image_path($hero-image)), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

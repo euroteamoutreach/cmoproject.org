@@ -2,7 +2,7 @@
 
   .hero {
     $hero-image: "testimony-guys.png";
-    @include background(url(image_path($hero-image)), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+    @include background(url(#{$assets-images-path}#{$hero-image}), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
     background-size: cover;
     background-position: top;
     background-color: #324766;

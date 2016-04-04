@@ -4,21 +4,21 @@
   text-align: center;
   padding: 14em;
   color: #FFF;
-  background-image: url(image_path("cmo-hiker.jpg"));
+  background-image: url(#{$assets-images-path}cmo-hiker.jpg);
   background-position: center center;
   background-size: cover;
 
   h1 { color: $text-icon-white; }
 
   @include media ($tablet-portrait) {
-    background-image: url(image_path("cmo-hiker-portrait.jpg"));
+    background-image: url(#{$assets-images-path}cmo-hiker-portrait.jpg);
     padding: 12em 2em 2em;
 
     h1 { font-size: $h2-font-size; }
   }
 
   @include media ($phone-landscape) {
-    background-image: url(image_path("cmo-hiker.jpg"));
+    background-image: url(#{$assets-images-path}cmo-hiker.jpg);
     padding: 6em 3em 3em;
 
     h1 { font-size: $h3-font-size; }
@@ -26,7 +26,7 @@
   }
 
   @include media ($phone-portrait) {
-    background-image: url(image_path("cmo-hiker-portrait.jpg"));
+    background-image: url(#{$assets-images-path}cmo-hiker-portrait.jpg);
     padding: 8em 2em 2em;
 
     h1 { font-size: $h3-font-size; }
