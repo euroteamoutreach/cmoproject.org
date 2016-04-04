@@ -1,17 +1,29 @@
+activate :directory_indexes
+
+set :css_dir, "assets/css"
+set :js_dir, "assets/js"
+set :images_dir, "assets/images"
+set :relative_links, true
+
+page "/*.xml", layout: false
+page "/*.json", layout: false
+page "/*.txt", layout: false
+page "/404.html", directory_index: false
+
 configure :development do
   activate :livereload
 end
 
-activate :directory_indexes
-page "/404.html", directory_index: false
-
-set :css_dir, "stylesheets"
-set :js_dir, "javascripts"
-set :images_dir, "images"
-set :partials_dir, "partials"
-set :debug_assets, true
+activate :external_pipeline,
+  name: :gulp,
+  latency: 2,
+  command: build? ? "./node_modules/gulp/bin/gulp.js buildSite" : "./node_modules/gulp/bin/gulp.js default",
+  source: ".tmp/dist"
 
 configure :build do
+  ignore "stylesheets/*"
+  ignore "javascripts/*"
+
   activate :gzip
   activate :minify_css
   activate :minify_javascript
@@ -20,10 +32,8 @@ configure :build do
   activate :search_engine_sitemap
 
   activate :asset_hash
-  activate :asset_host
-  set :asset_host do
-    "//d3fljjvmwfqmg4.cloudfront.net"
-  end
+  activate :asset_host,
+    host: "//d3fljjvmwfqmg4.cloudfront.net"
 end
 
 activate :s3_sync do |s3|
@@ -33,11 +43,4 @@ activate :s3_sync do |s3|
   s3.prefer_gzip = true
   s3.index_document = "index.html"
   s3.error_document = "404.html"
-end
-
-activate :cloudfront do |cf|
-  cf.access_key_id = ENV["AWS_ACCESS_KEY_ID"]
-  cf.secret_access_key = ENV["AWS_SECRET_ACCESS_KEY"]
-  cf.distribution_id = "E1KD5G5248WE8H"
-  cf.filter = /\.html$/i
 end
