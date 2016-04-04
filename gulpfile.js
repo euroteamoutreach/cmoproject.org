@@ -27,11 +27,25 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('source/assets/js'));
 });
 
+gulp.task('home-scripts', function() {
+  var b = browserify({
+    entries: 'source/javascripts/home-bundle.js',
+    debug: true
+  });
+
+  return b.bundle()
+    .pipe(source('home.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('source/assets/js'));
+});
+
 // BUILD TASK - Triggered by running "middleman build" from terminal
-gulp.task('buildSite', ['styles', 'scripts']);
+gulp.task('buildSite', ['styles', 'scripts', 'home-scripts']);
 
 // DEFAULT TASK - Triggered by running "middleman server" from terminal
-gulp.task('default', ['styles', 'scripts'], function(){
+gulp.task('default', ['styles', 'scripts', 'home-scripts'], function(){
   gulp.watch('source/stylesheets/*.scss', ['styles']);
-  gulp.watch('source/javascripts/*.js', ['scripts']);
+  gulp.watch('source/javascripts/*.js', ['scripts', 'home-scripts']);
 });
