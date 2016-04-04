@@ -1,7 +1,6 @@
 include CustomHelpers
 
 describe CustomHelpers do
-
   describe "#current_project" do
     it "returns a string which is the current project year" do
       expect(current_project_year).to eq("2016")
