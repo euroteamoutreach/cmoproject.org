@@ -1,16 +1,18 @@
 {
-  "name": "gulp-starter",
-  "version": "3.1.0",
-  "description": "A full featured configurable gulp asset pipeline and static site builder",
+  "name": "cmoproject.org",
+  "version": "1.1.0",
+  "description": "The web site for Carpathian Mountain Outreach",
   "engines": {
     "node": ">=0.12.0 ~5.9.0",
     "npm": ">=2.14.12 ~3.7.3"
   },
-  "homepage": "http://code.viget.com/gulp-starter/",
+  "homepage": "http://cmoproject.org",
   "repository": {
     "type": "git",
-    "url": "git://github.com/vigetlabs/gulp-starter.git"
+    "url": "git://github.com/joshukraine/cmoproject.org"
   },
+  "author": "Joshua Steele <joshukraine@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "start": "gulp",
     "gulp": "gulp",
@@ -78,8 +80,8 @@
     "webpack-dev-middleware": "1.5.1",
     "webpack-hot-middleware": "2.10.0"
   },
-  "license": "MIT",
   "dependencies": {
-    "normalize.css": "^4.0.0"
+    "jquery": "^2.2.2",
+    "moment": "^2.12.0"
   }
 }
