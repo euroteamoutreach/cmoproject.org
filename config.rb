@@ -11,10 +11,6 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/404.html", directory_index: false
 
-configure :development do
-  # activate :livereload
-end
-
 activate :external_pipeline,
   name: :gulp,
   command: build? ? "npm run production" : "npm run gulp",
