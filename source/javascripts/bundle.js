@@ -1,8 +1,0 @@
-require('./animate.js')
-require('./copyright.js')
-require('./fade-in-box.js')
-require('./faq.js')
-require('./nav-transparent.js')
-require('./nav.js')
-require('./scroll.js')
-require('./trailer-modal.js')
