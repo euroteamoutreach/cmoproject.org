@@ -1,0 +1,10 @@
+---
+title: Requirements
+---
+
+%section.page-content
+  .title
+    %h1 Requirements
+    %p Spreading the Gospel with a team of missionaries in a foreign country is not for everyone. Carpathian Mountain Outreach is geared towards frontline, active ministry and is best suited for single young men who meet the requirements listed below.
+  - data["requirements"].each do |requirement|
+    = partial "requirement", locals: { requirement: requirement }

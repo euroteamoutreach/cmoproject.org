@@ -1,0 +1,13 @@
+---
+title: Testimonies
+---
+
+%section.hero
+  .hero-inner
+    .hero-copy
+      %h1 Testimonies
+      %p Talk to the men who've been there.
+%section.page-content
+  %ul.bullets.testimonies-bullets
+    - data["testimonies"].each do |testimony|
+      = partial "testimony", locals: { testimony: testimony }

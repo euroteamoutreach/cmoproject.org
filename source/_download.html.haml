@@ -1,0 +1,12 @@
+.card
+  .card-header
+    %h5= download["title"]
+  .card-image
+    = inline_svg download["image"], class: "svg-image"
+  .card-copy
+    = download["body"]
+  .download
+    = link_to send(%{#{download["path"]}}) do
+      %button
+        %i.fa.fa-fw.fa-cloud-download
+        Download

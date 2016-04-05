@@ -1,0 +1,8 @@
+%li.nav-link= link_to "Overview", overview_smart_path(current_page.path), class: "scroll-on-page-link"
+%li.nav-link= link_to "Movie", "/movie"
+%li.nav-link= link_to "Testimonies", "/testimonies"
+%li.nav-link= link_to "FAQ", "/faq"
+%li.nav-link= link_to "Downloads", "/downloads"
+%li.nav-link
+  = link_to("/apply", class: "button") do
+    = content_tag :button, "Apply"

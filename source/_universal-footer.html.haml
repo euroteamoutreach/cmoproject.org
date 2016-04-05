@@ -1,0 +1,26 @@
+%footer.footer{:role => "contentinfo"}
+  .footer-logo
+    = link_to home_smart_path(current_page.path), class: "back-to-top" do
+      = inline_svg "cmo-logo-two-tone.svg", class: "logo"
+  .footer-links
+    %ul
+      %li
+        %h3 Get to know CMO
+      %li= link_to "Overview", overview_smart_path(current_page.path)
+      %li= link_to "Movie", "/movie"
+      %li= link_to "FAQ", "/faq"
+      %li= link_to "Testimonies", "/testimonies"
+    %ul
+      %li
+        %h3 Apply for CMO
+      %li= link_to "Requirements", "/requirements"
+      %li= link_to "Apply Now", "/apply"
+    %ul
+      %li
+        %h3 Downloads
+      %li= link_to "View all", "/downloads"
+      %li= link_to "Info Pack", info_pack_path
+      %li= link_to "Application", application_path
+      %li= link_to "Recommendation Form", rec_form_path
+  %hr/
+  %p Carpathian Mountain Outreach is a ministry of Euro Team Outreach, Inc.
