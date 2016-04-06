@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 
 gem "middleman", "~> 4.0"
-gem "middleman-livereload", "~> 3.4"
-
+gem "middleman-minify-html", "~> 3.0"
 gem "sassc", "~> 1.8"
 gem "bourbon", "~> 4.2"
 gem "neat", "~> 1.7"
