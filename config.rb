@@ -21,9 +21,6 @@ configure :build do
 
   set :url_root, "http://cmoproject.org"
   activate :search_engine_sitemap
-
-  activate :asset_host,
-    host: "http://d3fljjvmwfqmg4.cloudfront.net"
 end
 
 activate :external_pipeline,
