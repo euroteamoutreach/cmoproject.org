@@ -19,7 +19,7 @@
 
 .env
 capybara-*.html
-
 /node_modules
 .tmp
 Gemfile.lock
+npm-debug.log
