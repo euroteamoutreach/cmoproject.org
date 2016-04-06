@@ -63,7 +63,7 @@ module CustomHelpers
   # https://gist.github.com/bitmanic/0047ef8d7eaec0bf31bb
   def inline_svg(filename, options = {})
     root = Middleman::Application.root
-    file_path = "#{root}/source/assets/images/#{filename}"
+    file_path = "#{root}/source/images/#{filename}"
     if File.exists?(file_path)
       file = File.read(file_path).force_encoding("UTF-8")
       doc = Nokogiri::HTML::DocumentFragment.parse file
