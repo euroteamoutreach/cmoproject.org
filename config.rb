@@ -11,12 +11,6 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/404.html", directory_index: false
 
-activate :external_pipeline,
-  name: :gulp,
-  command: build? ? "npm run production" : "npm run gulp",
-  source: ".tmp",
-  latency: 1
-
 configure :build do
   activate :minify_html do |html|
     html.remove_quotes = false
@@ -29,8 +23,14 @@ configure :build do
   activate :search_engine_sitemap
 
   activate :asset_host,
-    host: "//d3fljjvmwfqmg4.cloudfront.net"
+    host: "http://d3fljjvmwfqmg4.cloudfront.net"
 end
+
+activate :external_pipeline,
+  name: :gulp,
+  command: build? ? "npm run production" : "npm run gulp",
+  source: ".tmp",
+  latency: 1
 
 activate :s3_sync do |s3|
   s3.bucket = "cmoproject.org"
