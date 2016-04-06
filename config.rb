@@ -18,22 +18,11 @@ activate :external_pipeline,
   latency: 1
 
 configure :build do
-
-  # Minify HTML
   activate :minify_html do |html|
     html.remove_quotes = false
     html.remove_intertag_spaces = true
   end
 
-  # activate :gzip
-  # activate :minify_css
-  # activate :minify_javascript
-
-  # Ignore the CSS file Middleman normally generates
-  # Middleman expects `site.css.scss` → `site.css`
-  # We strip the `.css` to prevent Gulp generating `site.css.css`
-  # Add your site's main `.scss` filename (without the extension)
-  # To understand more, comment this out and run `middleman build`
   ignore "stylesheets/site"
 
   set :url_root, "http://cmoproject.org"
