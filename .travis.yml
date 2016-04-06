@@ -2,7 +2,7 @@ language: ruby
 rvm: 2.3.0
 install: bundle install
 before_script:
-  - npm install -g gulp
+  - npm install
 script: bin/deploy
 
 env:
