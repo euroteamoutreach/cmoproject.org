@@ -17,6 +17,8 @@ configure :build do
     html.remove_intertag_spaces = true
   end
 
+  activate :asset_hash
+
   ignore "stylesheets/site"
 
   set :url_root, "http://cmoproject.org"
