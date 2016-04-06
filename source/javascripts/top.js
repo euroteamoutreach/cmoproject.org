@@ -1,9 +1,9 @@
 var $ = require("jquery");
 
 $(document).ready(function() {
-  var scrollTop = $(window).scrollTop();
 
   if ($("body").hasClass("index")) {
+    var scrollTop = $(window).scrollTop();
     $(".back-to-top").on("click", function (e) {
       e.preventDefault();
       $("html,body").animate({
