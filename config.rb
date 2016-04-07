@@ -18,11 +18,14 @@ configure :build do
   end
 
   activate :asset_hash
-
-  ignore "stylesheets/site"
+  activate :asset_host,
+    host: "//d3fljjvmwfqmg4.cloudfront.net",
+    rewrite_ignore: ["*.js"]
 
   set :url_root, "http://cmoproject.org"
   activate :search_engine_sitemap
+
+  ignore "stylesheets/site"
 end
 
 activate :external_pipeline,
