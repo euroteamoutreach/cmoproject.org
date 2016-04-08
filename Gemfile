@@ -10,7 +10,7 @@ gem "nokogiri", "~> 1.6"
 
 gem "middleman-s3_sync", "~> 4.0"
 gem "middleman-search_engine_sitemap", "~> 1.4"
-gem "unf", "~> 0.1.4"
+# gem "unf", "~> 0.1.4"
 
 group :development do
   gem "rspec"
@@ -19,4 +19,4 @@ group :development do
 end
 
 # Temporary workaround for fog error that blows up s3_sync
-gem "fog-core", "1.34.0"
+# gem "fog-core", "1.34.0"
