@@ -2,19 +2,19 @@
 layout: home
 ---
 
-%section.nav-transparent{:role => "banner"}
+%section.nav-transparent{role: "banner"}
   .navigation-wrapper
     = link_to "/", class: "logo" do
       = inline_svg "cmo-logo-two-tone.svg", class: "svg-logo"
-    %a#js-mobile-menu-tra.navigation-menu-button{:href => "javascript:void(0)"}
+    %a#js-mobile-menu-tra.navigation-menu-button{href: "javascript:void(0)"}
       %i.fa.fa-bars
-    %nav{:role => "navigation"}
+    %nav{role: "navigation"}
       %ul#js-navigation-menu-tra.navigation-menu.show
         = partial "nav-links"
 %section#alpha
   %h1 Carpathian Mountain Outreach
   %p “Go ye therefore, and teach all nations...” (Matthew 28:19)
-  %a.scroll.scroll-on-page-link{:href => "#call-to-men"}
+  %a.scroll.scroll-on-page-link{href: "#call-to-men"}
     %i.fa.fa-chevron-down.fa-2x.animated
 %section#call-to-men
   .wrap
@@ -27,17 +27,17 @@ layout: home
   #js-fadeInElement.fade-in-element
     %h2 Got 1 minute?
     .modal
-      %label{:for => "modal-1"}
+      %label{for: "modal-1"}
         .modal-trigger
           %span.trigger-text Watch the CMO Movie Trailer
           %i.fa.fa-play-circle.fa-2x.fa-fw
-      %input#modal-1.modal-state{:type => "checkbox"}/
+      %input#modal-1.modal-state{type: "checkbox"}/
       .modal-fade-screen
         .modal-inner
-          .modal-close{:for => "modal-1"}
+          .modal-close{for: "modal-1"}
           .video
             .video-wrapper
-              %iframe{:allowfullscreen => "", :frameborder => "0", :mozallowfullscreen => "", :src => "https://player.vimeo.com/video/56083375?color=2196F3&portrait=0", :webkitallowfullscreen => ""}
+              %iframe{allowfullscreen: "", frameborder: "0", mozallowfullscreen: "", src: "https://player.vimeo.com/video/56083375?color=2196F3&portrait=0", webkitallowfullscreen: ""}
     %p#full-movie-link= link_to "Or watch the full movie here", "/movie"
 %section#the-plan
   .wrap
