@@ -17,6 +17,12 @@ configure :build do
     html.remove_intertag_spaces = true
   end
 
+  activate :external_pipeline,
+    name: :gulp,
+    command: "npm run production",
+    source: ".tmp",
+    latency: 1
+
   activate :asset_hash
   activate :asset_host,
     host: "//d3fljjvmwfqmg4.cloudfront.net",
@@ -27,12 +33,6 @@ configure :build do
 
   ignore "stylesheets/site"
 end
-
-activate :external_pipeline,
-  name: :gulp,
-  command: build? ? "npm run production" : "npm run gulp",
-  source: ".tmp",
-  latency: 1
 
 activate :s3_sync do |s3|
   s3.bucket = "cmoproject.org"
