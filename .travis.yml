@@ -16,6 +16,8 @@ install:
   - npm install -g gulp
   - npm install
 
+before_script: bin/rspec
+
 script: bin/deploy
 
 branches:
