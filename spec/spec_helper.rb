@@ -3,6 +3,7 @@ require "capybara/rspec"
 require "middleman-core"
 require "middleman-core/rack"
 require "middleman-s3_sync"
+require "middleman-pry"
 
 middleman_app = ::Middleman::Application.new
 

@@ -24,6 +24,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    coderay (1.1.1)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -72,6 +73,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     map (6.6.0)
+    method_source (0.8.2)
     middleman (4.1.6)
       coffee-script (~> 2.2)
       compass-import-once (= 1.0.5)
@@ -106,6 +108,9 @@ GEM
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
+    middleman-pry (1.0.1)
+      middleman (>= 3.3, < 5)
+      pry (~> 0.9)
     middleman-s3_sync (4.0.2)
       ansi (~> 1.5.0)
       fog-aws (>= 0.1.1)
@@ -136,6 +141,10 @@ GEM
     padrino-support (0.13.1)
       activesupport (>= 3.1)
     parallel (1.8.0)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -161,6 +170,7 @@ GEM
       bundler
       ffi (~> 1.9.6)
       sass (>= 3.3.0)
+    slop (3.6.0)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -185,6 +195,7 @@ DEPENDENCIES
   launchy
   middleman (~> 4.0)
   middleman-minify-html (~> 3.0)
+  middleman-pry
   middleman-s3_sync (~> 4.0)
   middleman-search_engine_sitemap (~> 1.4)
   neat (~> 1.7)
