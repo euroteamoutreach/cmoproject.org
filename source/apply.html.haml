@@ -7,14 +7,15 @@ title: Apply for CMO 2016
     .hero-copy
       %h1
         Apply for CMO #{current_project_year}
+
 %section.page-content
   %article.announcements
     %h6
       Before applying for CMO, please read the #{link_to "Requirements", "/requirements"}.
-    %hr/
-    %h6
-      All applications for CMO #{current_project_year} are due no later than April 1, #{current_project_year}.
+    %hr
+    %h6= registration_message
+
   %h5 How to Apply
-  %hr/
+  %hr
   - data["apply-steps"].each do |step|
     = partial "apply-step", locals: { step: step }

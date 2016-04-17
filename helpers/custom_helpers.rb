@@ -3,6 +3,22 @@ module CustomHelpers
     "2016"
   end
 
+  def registration_deadline
+    "April 1, #{current_project_year}"
+  end
+
+  def registration_closed?
+    registration_deadline.to_date < Date.today
+  end
+
+  def registration_message
+    if registration_closed?
+      "<span class=\"closed\">Registration for CMO #{current_project_year} is now closed.</span>"
+    else
+      "All applications for CMO #{current_project_year} are due no later than #{registration_deadline}."
+    end
+  end
+
   def full_title(page_title=nil)
     page_title ||= ""
     base_title = "Carpathian Mountain Outreach"
