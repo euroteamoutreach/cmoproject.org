@@ -1,10 +1,9 @@
-%body
-  %header{:class => "navigation#{add_visible_class}", :role => "banner"}
-    .navigation-wrapper
-      = link_to home_smart_path(current_page.path), class: "logo back-to-top" do
-        = inline_svg "cmo-logo-simple.svg", class: "svg-logo"
-      %a#js-mobile-menu.navigation-menu-button{:href => "javascript:void(0)"}
-        %i.fa.fa-bars
-      %nav{:role => "navigation"}
-        %ul#js-navigation-menu.navigation-menu.show
-          = partial "nav-links"
+%header{:class => "navigation#{add_visible_class}", :role => "banner"}
+  .navigation-wrapper
+    = link_to home_smart_path(current_page.path), class: "logo back-to-top" do
+      = inline_svg "cmo-logo-simple.svg", class: "svg-logo"
+    %a#js-mobile-menu.navigation-menu-button{:href => "javascript:void(0)"}
+      %i.fa.fa-bars
+    %nav{:role => "navigation"}
+      %ul#js-navigation-menu.navigation-menu.show
+        = partial "nav-links"
