@@ -71,5 +71,16 @@
     margin: auto;
     max-width: 35em;
     text-align: center;
+
+    a {
+      border-bottom: 1px solid $footer-disclaimer-color;
+      color: inherit;
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        border-bottom: 0;
+      }
+    }
   }
 }

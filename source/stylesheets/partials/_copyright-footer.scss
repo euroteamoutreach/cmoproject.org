@@ -1,7 +1,5 @@
 .footer-2 {
   $base-spacing: 1.5em;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
   $footer-background: desaturate(darken($medium-gray, 20%), 30%);
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);

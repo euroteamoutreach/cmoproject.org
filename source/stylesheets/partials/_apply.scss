@@ -21,6 +21,10 @@
       margin: 0;
     }
 
+    .closed {
+      color: $red;
+    }
+
     @include media ($phone-portrait) {
       p { font-size: 0.9em; }
     }
