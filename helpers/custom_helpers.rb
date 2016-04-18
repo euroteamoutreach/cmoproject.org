@@ -3,8 +3,43 @@ module CustomHelpers
     "2016"
   end
 
+  def project_start_date
+    "June 20, #{current_project_year}"
+  end
+
+  def project_end_date
+    "August 5, #{current_project_year}"
+  end
+
+  def max_arrival_date
+    "June 22"
+  end
+
+  def operations_fee
+    "140"
+  end
+
+  def weekly_cost
+    (operations_fee.to_i * 2).to_s
+  end
+
+  def info_pack_finance_page
+    "16"
+  end
+
   def registration_deadline
     "April 1, #{current_project_year}"
+  end
+
+  def data_sub(string)
+    string.gsub!("%{current_project_year}", current_project_year)
+    string.gsub!("%{project_start_date}", project_start_date)
+    string.gsub!("%{project_end_date}", project_end_date)
+    string.gsub!("%{operations_fee}", operations_fee)
+    string.gsub!("%{weekly_cost}", weekly_cost)
+    string.gsub!("%{max_arrival_date}", max_arrival_date)
+    string.gsub!("%{info_pack_finance_page}", info_pack_finance_page)
+    string
   end
 
   def registration_closed?
