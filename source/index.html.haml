@@ -2,7 +2,7 @@
 layout: home
 ---
 
-%section.nav-transparent{role: "banner"}
+%section.nav-transparent{ role: "banner" }
   .navigation-wrapper
     = link_to "/", class: "logo" do
       = inline_svg "cmo-logo-two-tone.svg", class: "svg-logo"
@@ -55,7 +55,7 @@ layout: home
         .card-header
           %h5 When, Where, How
         .card-copy
-          = data.content.when_where_how
+          = data_sub(data.content.when_where_how)
       .card
         .card-image
           = image_tag "requirements.jpg"

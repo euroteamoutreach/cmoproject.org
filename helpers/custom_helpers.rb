@@ -3,8 +3,43 @@ module CustomHelpers
     "2016"
   end
 
+  def project_start_date
+    "June 20, #{current_project_year}"
+  end
+
+  def project_end_date
+    "August 5, #{current_project_year}"
+  end
+
+  def max_arrival_date
+    "June 22"
+  end
+
+  def operations_fee
+    "140"
+  end
+
+  def weekly_cost
+    (operations_fee.to_i * 2).to_s
+  end
+
+  def info_pack_finance_page
+    "16"
+  end
+
   def registration_deadline
     "April 1, #{current_project_year}"
+  end
+
+  def data_sub(string)
+    variables = %w{current_project_year project_start_date project_end_date
+                   operations_fee weekly_cost max_arrival_date
+                   info_pack_finance_page}
+    variables.each do |variable|
+      value = send(variable)
+      string.gsub!("%{#{variable}}", value)
+    end
+    string
   end
 
   def registration_closed?
