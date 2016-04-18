@@ -32,13 +32,13 @@ module CustomHelpers
   end
 
   def data_sub(string)
-    string.gsub!("%{current_project_year}", current_project_year)
-    string.gsub!("%{project_start_date}", project_start_date)
-    string.gsub!("%{project_end_date}", project_end_date)
-    string.gsub!("%{operations_fee}", operations_fee)
-    string.gsub!("%{weekly_cost}", weekly_cost)
-    string.gsub!("%{max_arrival_date}", max_arrival_date)
-    string.gsub!("%{info_pack_finance_page}", info_pack_finance_page)
+    variables = %w{current_project_year project_start_date project_end_date
+                   operations_fee weekly_cost max_arrival_date
+                   info_pack_finance_page}
+    variables.each do |variable|
+      value = send(variable)
+      string.gsub!("%{#{variable}}", value)
+    end
     string
   end
 
