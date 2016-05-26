@@ -8,7 +8,7 @@ env:
   - secure: vqTI2pJbqJJv+mk0nxtSFzOM0c0xKurtkM4mZEkaa796XwIXnxytrj69cGhgeix0MPi4RIbIdBQj6iYu7BiD8LgECJo4X2zrU4/N5oDQyuWgYrWA9WBl5Fb+YZLvDMWLm4GpndUgj8dCbLdP0XTviLlqhjMDfi/uMZ+ztoadL4EiqUOEG8eAKhTQtS76z2ALFkh7G6LMDwTkmB+AZGtr3oiuYtlBzOdvYqyLhE36seZP5TU/hWUGy2YaqqiR1KWHI311oPamM2aX6HehTLFLb3U/JVYOmKpZDBn/eY2SvKkEErCCr9o0l+cWp5G25+2SyEZ2Pgj72beTpgiY1Kgk0HHxr2fRvLuwLQsIJR25Y6fqLGXkYJEySkauNnbv/sZQhq4qUIelscJdKQMlpU9/3OBTodO3u8T7QXfPL15G6f5x02XMT6/aFEDFubypYvDMm3QWZ7a7U8+m+H/EI1NsJdQnTv7q5UG1l923kFnDcxk/2VqB35em2KV6/xckQIVSLmh2ZQacEOcQtMChHFL3PnaBGFTcIA3ODTFmpy1dsN1l5+v7uDlLlgteMLKJCq+f9xmWqQRwwuO7hLVZ11YCsDodT+e3wCVDgYety/VaYcX4bjKsHrlrMZBtKFjsbT4s05kVKuPs6W0aSpn3pmaPHm9I3igfDoq7T5hh4U7XFak=
 
 before_install:
-  - rvm install 2.3.0
+  - rvm install 2.3.1
 
 install:
   - bundle install
