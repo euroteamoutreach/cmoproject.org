@@ -43,7 +43,7 @@ module CustomHelpers
   end
 
   def registration_closed?
-    registration_deadline.to_date < Date.today
+    Date.parse(registration_deadline) < Date.today
   end
 
   def registration_message
