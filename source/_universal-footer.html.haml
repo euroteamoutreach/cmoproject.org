@@ -1,4 +1,4 @@
-%footer.footer{:role => "contentinfo"}
+%footer.universal-footer{:role => "contentinfo"}
   .footer-logo
     = link_to home_smart_path(current_page.path), class: "back-to-top" do
       = inline_svg "cmo-logo-two-tone.svg", class: "logo"
@@ -23,6 +23,6 @@
       %li= link_to "Application", application_path
       %li= link_to "Recommendation Form", rec_form_path
   %hr/
-  %p 
+  %p
     Carpathian Mountain Outreach is a ministry of
-    = link_to "Euro Team Outreach, Inc.", "http://www.euroteamoutreach.org"
+    = link_to "Euro Team Outreach, Inc.", "http://euroteamoutreach.org"
