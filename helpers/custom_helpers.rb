@@ -42,10 +42,6 @@ module CustomHelpers
     string
   end
 
-  def registration_closed?
-    Date.parse(registration_deadline) < Date.today
-  end
-
   def registration_message
     if registration_closed?
       "<span class=\"closed\">Registration for CMO #{current_project_year} is now closed.</span>"
@@ -92,22 +88,18 @@ module CustomHelpers
     "/files/cmo-#{current_project_year}-rec-form.pdf"
   end
 
-  def contact_text
-    if !!(current_page.path =~ /faq/)
+  def contact_text(path)
+    if !!(path =~ /faq/)
       "Didn&rsquo;t find your answer? Drop us a line!"
     else
       "Got a question about CMO? Drop us a line!"
     end
   end
 
-  def add_visible_class
-    unless !!(current_page.path =~ /index/)
+  def add_visible_class(path)
+    unless !!(path =~ /index/)
       " is-visible"
     end
-  end
-
-  def page_description
-    current_page.data.description || data.site.description
   end
 
   # https://robots.thoughtbot.com/organized-workflow-for-svg
@@ -128,7 +120,9 @@ module CustomHelpers
     end
   end
 
-  def image_url(filename)
-    URI.join(data.site.url, image_path(filename))
-  end
+  private
+
+    def registration_closed?
+      Date.parse(registration_deadline) < Date.today
+    end
 end

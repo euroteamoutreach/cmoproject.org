@@ -2,11 +2,11 @@ $base-border-radius: 3px !default;
 $large-screen: em(860) !default;
 $navigation-padding: 1em;
 $navigation-background: transparent;
-$navigation-color: transparentize($text-icon-white, 0.3);
-$navigation-color-hover: $text-icon-white;
+$navigation-color: transparentize($white, 0.3);
+$navigation-color-hover: $white;
 $navigation-height: 70px;
 $navigation-height-mobile: 55px;
-$navigation-active-link-color: transparentize($text-icon-white, 0.5);
+$navigation-active-link-color: transparentize($white, 0.5);
 $horizontal-bar-mode: $medium-screen;
 
 section.nav-transparent {
@@ -134,7 +134,7 @@ section.nav-transparent {
   // The nav items
 
   ul li.nav-link {
-    background: transparentize($text-icon-white, 0.1);
+    background: transparentize($white, 0.1);
     display: block;
     line-height: $navigation-height-mobile;
     overflow: hidden;
@@ -197,7 +197,7 @@ section.nav-transparent {
         color: $navigation-color;
         &:hover,
         &:focus {
-          background-color: transparentize($text-icon-white, 0.7);
+          background-color: transparentize($white, 0.7);
         }
       }
     }

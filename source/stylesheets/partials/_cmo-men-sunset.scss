@@ -38,7 +38,7 @@
 
   .fade-in-element {
     @include clearfix;
-    background: transparentize($text-icon-white, .1);
+    background: transparentize($white, .1);
     border: 1px solid silver;
     border-radius: $base-border-radius;
     left: 30%;
@@ -149,7 +149,7 @@
     .modal-trigger {
       display: inline-block;
       padding-left: 1em;
-      color: $text-icon-white;
+      color: $white;
       margin: 0 auto;
       background-color: $action-color;
       border-radius: $modal-trigger-image-width / 2;

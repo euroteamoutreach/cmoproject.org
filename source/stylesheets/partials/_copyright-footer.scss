@@ -1,20 +1,21 @@
-.footer-2 {
+.copyright-footer {
   $base-spacing: 1.5em;
   $footer-background: desaturate(darken($medium-gray, 20%), 30%);
-  $footer-color: white;
+  $footer-color: $white;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
   background: $footer-background;
+  display: inline-block;
+  margin-bottom: -20px;
   padding: $base-spacing;
   width: 100%;
-  display: inline-block;
 
   p {
-    line-height: 1.5em;
-    margin: 0 0 1em 0;
-    padding: 0;
     font-weight: 400;
+    line-height: 1.5em;
+    margin: 0 0 1em;
+    padding: 0;
 
     @include media($large-screen) {
       float: left;
@@ -29,6 +30,7 @@
     a {
       color: inherit;
       text-decoration: underline;
+
       &:focus,
       &:hover {
         text-decoration: none;
@@ -54,8 +56,8 @@
       }
 
       li {
-        font-size: 1em;
         float: left;
+        font-size: 1em;
         line-height: 0;
         margin: 0;
         padding-right: 0.7em;
