@@ -8,7 +8,7 @@
   background-position: center center;
   background-size: cover;
 
-  h1 { color: $text-icon-white; }
+  h1 { color: $white; }
 
   @include media ($tablet-portrait) {
     background-image: url(#{$assets-images-path}cmo-hiker-portrait.jpg);

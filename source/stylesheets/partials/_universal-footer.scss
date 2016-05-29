@@ -1,4 +1,4 @@
-.footer {
+.universal-footer {
   $base-spacing: 1.5em !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
@@ -16,8 +16,8 @@
     text-align: center;
 
     .logo {
-      width: 100px;
       height: 100px;
+      width: 100px;
     }
   }
 

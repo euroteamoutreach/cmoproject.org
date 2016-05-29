@@ -1,12 +1,12 @@
 $base-border-radius: 3px !default;
 $large-screen: em(860) !default;
 $navigation-padding: 1em;
-$navigation-background: $text-icon-white;
+$navigation-background: $white;
 $navigation-color: $action-color;
 $navigation-color-hover: $action-color;
 $navigation-height: 70px;
 $navigation-height-mobile: 55px;
-$navigation-active-link-color: transparentize($text-icon-white, 0.5);
+$navigation-active-link-color: transparentize($white, 0.5);
 $horizontal-bar-mode: $medium-screen;
 
 header.navigation {
