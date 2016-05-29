@@ -106,10 +106,6 @@ module CustomHelpers
     end
   end
 
-  def page_description
-    current_page.data.description || data.site.description
-  end
-
   # https://robots.thoughtbot.com/organized-workflow-for-svg
   # https://gist.github.com/bitmanic/0047ef8d7eaec0bf31bb
   def inline_svg(filename, options = {})
