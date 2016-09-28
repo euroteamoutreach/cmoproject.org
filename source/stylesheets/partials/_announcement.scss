@@ -1,0 +1,32 @@
+.announcement {
+
+  section.page-content {
+    @include outer-container;
+    padding: 2em;
+
+    @include media($large-screen) {
+      padding: 4em 12em;
+    }
+
+    .title {
+      padding-bottom: 3em;
+
+      @include media ($phone-portrait) {
+        h1 { font-size: $h3-font-size; }
+      }
+    }
+
+    article {
+      padding: 1.5em 0 1em;
+      border-bottom: 1px solid $base-border-color;
+
+      @include media ($phone-portrait) {
+        h5 { font-size: $h6-font-size; }
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
