@@ -198,7 +198,7 @@ PLATFORMS
 DEPENDENCIES
   bitters (~> 1.2.0)
   bourbon (~> 4.2)
-  capybara (~> 2.7)
+  capybara (~> 2.9)
   launchy (~> 2.4)
   middleman (~> 4.1)
   middleman-minify-html (~> 3.4)
@@ -206,9 +206,9 @@ DEPENDENCIES
   middleman-s3_sync (~> 4.0)
   middleman-search_engine_sitemap (~> 1.4)
   mime-types (~> 3.0)
-  neat (~> 1.7)
+  neat (~> 1.8)
   nokogiri (~> 1.6)
-  rspec (~> 3.4)
+  rspec (~> 3.5)
   sassc (~> 1.9)
 
 BUNDLED WITH
