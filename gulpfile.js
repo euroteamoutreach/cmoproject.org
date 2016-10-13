@@ -114,7 +114,7 @@ gulp.task('sizereport', function () {
 
 // Development Task
 gulp.task('development', function(done) {
-  p.runSequence('clean', 'css', 'js', 'images', done);
+  p.runSequence('clean', 'css', 'js', done);
 });
 
 // Production Task
