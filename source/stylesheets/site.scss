@@ -1,10 +1,11 @@
 @charset "utf-8";
+@import "vendor/normalize";
+@import "vendor/animate";
 
-@import "normalize";
+// http://bourbon.io
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-@import "animate";
 
 @import "accordion";
 @import "cards";
@@ -13,6 +14,7 @@
 @import "hero";
 @import "global";
 
+// Partials
 @import "partials/404";
 @import "partials/alpha";
 @import "partials/announcement";
@@ -32,3 +34,8 @@
 @import "partials/testimonies";
 @import "partials/the-plan";
 @import "partials/universal-footer";
+
+//////////////////////// SANDBOX ////////////////////////
+//// Try out new code here, then extract to partial. ////
+/////////////////////////////////////////////////////////
+
