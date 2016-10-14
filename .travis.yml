@@ -2,24 +2,19 @@ language: node_js
 node_js:
   - "5"
 
-env:
-  global:
-  - secure: yNddJwm7llArnHS54HbzMUJ0Fvi7L3sHy7pGNylu9m7rP3o3BEUrOL+geFRJCcuTBMyycs43ykzOOF7yvLQSMpe38E9BeiznldR0lqkvTgVL2t5jFQGCrRZXrwwvDWKyMm1yqikDjXF2JUOThlygB8Kyxqw7xUuZKk5M9VmIVIYgD2Yk8KojWhbjsK1gKzRl4Xw0dGzROl1qHKEaNE4xcY1OtKiiDvJljLoPxvpWZHsxSrMiQICJSEKX11uESV5wbB2kaeqMbfhGG7/pL1q9ZVOJMGWD/Bsh5snlKl1PNtqJO6lEOICBh9xmg32/v5PBjq/A/x90L8s4i2f7zU5EnZYP6h61RjSlLRisugeOM+yuIgrFCX6o16ATeFyq492vwX1oVlj54KLTL6wsXGH7UyML9Exy3E38n1J56ONVFaIaBcUWiBAVEC4GB8/Yl5Ft0QBTw9dzbBtw2tWm1oMNAu7WN/XWCjsnRKubeF/kMKiLzcEKwqDGNT5Ygiskwcfw3fo3OvTgc5pf1WKLZ5Y5UjKtB/GJk82Y5UAmuqV9TX/YDExBFV5ogy5/6ef9DF/AFR8jmKWo/79BWz0QgIIuWZVeFID+HJPBZvygZ8Ceas1QwbnDbbDJlvEVsyzVChTzFmHR+Yg0yEjEoA0Wr4S4UpmWhGtGT3C9eriP5TbFyd4=
-  - secure: vqTI2pJbqJJv+mk0nxtSFzOM0c0xKurtkM4mZEkaa796XwIXnxytrj69cGhgeix0MPi4RIbIdBQj6iYu7BiD8LgECJo4X2zrU4/N5oDQyuWgYrWA9WBl5Fb+YZLvDMWLm4GpndUgj8dCbLdP0XTviLlqhjMDfi/uMZ+ztoadL4EiqUOEG8eAKhTQtS76z2ALFkh7G6LMDwTkmB+AZGtr3oiuYtlBzOdvYqyLhE36seZP5TU/hWUGy2YaqqiR1KWHI311oPamM2aX6HehTLFLb3U/JVYOmKpZDBn/eY2SvKkEErCCr9o0l+cWp5G25+2SyEZ2Pgj72beTpgiY1Kgk0HHxr2fRvLuwLQsIJR25Y6fqLGXkYJEySkauNnbv/sZQhq4qUIelscJdKQMlpU9/3OBTodO3u8T7QXfPL15G6f5x02XMT6/aFEDFubypYvDMm3QWZ7a7U8+m+H/EI1NsJdQnTv7q5UG1l923kFnDcxk/2VqB35em2KV6/xckQIVSLmh2ZQacEOcQtMChHFL3PnaBGFTcIA3ODTFmpy1dsN1l5+v7uDlLlgteMLKJCq+f9xmWqQRwwuO7hLVZ11YCsDodT+e3wCVDgYety/VaYcX4bjKsHrlrMZBtKFjsbT4s05kVKuPs6W0aSpn3pmaPHm9I3igfDoq7T5hh4U7XFak=
-
 before_install:
   - rvm install 2.3.1
 
 install:
   - bundle install
   - npm install -g lodash marked varstream svgicons2svgfont node-gyp ttf2woff2
-  - npm install -g gulp
+  - npm install -g gulp-cli
   - npm install
 
 before_script: bin/rspec
 
-script: bin/deploy
+script: bundle exec middleman build --clean
 
 branches:
   only:
-  - master
+    - master

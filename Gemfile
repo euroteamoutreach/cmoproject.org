@@ -6,9 +6,6 @@ gem "middleman", "~> 4.1"
 # https://github.com/middleman/middleman-minify-html#middleman-minify-html
 gem "middleman-minify-html", "~> 3.4"
 
-# https://rubygems.org/gems/sassc
-gem "sassc", "~> 1.9"
-
 # See http://bourbon.io/ for installation instructions
 gem "bourbon", "~> 4.2"
 gem "neat", "~> 1.8"
@@ -31,3 +28,9 @@ group :development do
   gem "capybara", "~> 2.9"
   gem "launchy", "~> 2.4"
 end
+
+# https://github.com/brigade/haml-lint
+gem "haml_lint"
+
+# https://github.com/brigade/scss-lint
+gem "scss_lint"
