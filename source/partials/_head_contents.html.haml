@@ -6,6 +6,7 @@
 = tag "meta", name: "author", content: "Euro Team Outreach, Inc."
 = tag "meta", name: "google-site-verification", content: "SFptASFx8YkEojtumC6U6VVLRBaShVrvmaTXDESgqf8"
 %title= full_title(current_page.data.title)
+= partial "partials/analytics" if production?
 = tag "meta", property: "og:url", content: data.site.url
 = tag "meta", property: "og:title", content: data.site.title
 = tag "meta", property: "og:description", content: data.site.description.to_s

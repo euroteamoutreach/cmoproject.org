@@ -9,7 +9,7 @@ title: Downloads
 %section.page-content
   .cards
     - data["downloads"].each do |download|
-      = partial "download", locals: { download: download }
+      = partial "partials/download", locals: { download: download }
   %article.announcements
     %h6
       For step-by-step instructions on how to apply for CMO #{current_project_year},
