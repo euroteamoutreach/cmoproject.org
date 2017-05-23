@@ -59,7 +59,7 @@ describe "footer nav links", type: :feature do
     visit "/downloads"
     within "footer.universal-footer" do
       click_link "Euro Team Outreach, Inc."
-      expect(current_url).to eq("http://euroteamoutreach.org/")
+      expect(current_url).to eq("https://euroteamoutreach.org/")
     end
   end
 
