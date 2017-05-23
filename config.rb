@@ -29,8 +29,8 @@ configure :build do
   set :url_root, "http://cmoproject.org"
   activate :search_engine_sitemap
 
-  ignore "javascripts/all.js"
-  ignore "stylesheets/site"
+  ignore "assets/javascripts/all.js"
+  ignore "assets/stylesheets/site"
 
   activate :minify_html do |html|
     html.remove_quotes = false
