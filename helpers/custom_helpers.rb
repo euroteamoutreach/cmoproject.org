@@ -50,13 +50,12 @@ module CustomHelpers
     end
   end
 
-  def full_title(page_title=nil)
+  def full_title(page_title=nil, site_title)
     page_title ||= ""
-    base_title = "Carpathian Mountain Outreach"
     if page_title.empty?
-      base_title
+      site_title
     else
-      page_title + " | " + base_title
+      page_title + " | " + site_title
     end
   end
 
