@@ -2,6 +2,7 @@ require('./animate');
 require('./copyright');
 require('./fade-in-box');
 require('./faq');
+require('./_font-loader');
 require('./nav-scroll');
 require('./nav-transparent');
 require('./nav');

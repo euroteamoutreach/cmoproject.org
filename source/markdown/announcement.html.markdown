@@ -11,8 +11,8 @@ But harvests need laborers, and as always, laborers are in short supply. In orde
 
 CMO is an exciting ministry that has born much fruit. If God allows, we look forward to resuming it in the summer of 2018. Thank you for your prayers and support for our team as we strive to communicate Christ to the world.
 
-[getbiblefirst]: http://getbiblefirst.com
+[getbiblefirst]: https://getbiblefirst.com
 {:target="_blank"}
-[training]: http://getbiblefirst.com/training/
+[training]: https://getbiblefirst.com/training/
 {:target="_blank"}
 

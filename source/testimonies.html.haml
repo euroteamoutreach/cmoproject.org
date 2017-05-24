@@ -10,4 +10,4 @@ title: Testimonies
 %section.page-content
   %ul.bullets.testimonies-bullets
     - data["testimonies"].each do |testimony|
-      = partial "testimony", locals: { testimony: testimony }
+      = partial "partials/testimony", locals: { testimony: testimony }

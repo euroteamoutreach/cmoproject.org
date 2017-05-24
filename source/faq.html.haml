@@ -13,4 +13,4 @@ title: Frequently Asked Questions
       Please #{link_to "read the announcement", "/announcement"} for details.
   %ul.accordion.fa-ul
     - data["questions"].each do |question|
-      = partial "question", locals: { question: question }
+      = partial "partials/question", locals: { question: question }
