@@ -7,7 +7,7 @@
 var gulp = require('gulp');
 var bourbon = require('bourbon').includePaths;
 var neat = require('bourbon-neat').includePaths;
-var p    = require('gulp-load-plugins')({ // This loads all the other plugins.
+var p = require('gulp-load-plugins')({ // This loads all the other plugins.
   DEBUG: false,
   pattern: ['gulp-*', 'gulp.*', 'del', 'run-*', 'browser*', 'vinyl-*'],
   rename: {
