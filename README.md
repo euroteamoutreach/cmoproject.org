@@ -105,8 +105,8 @@ Legal
 
 Copyright &copy; 2017 Euro Team Outreach, Inc. Software is licensed under [MIT][license].
 
-[travis-svg]: https://travis-ci.org/joshukraine/cmoproject.org.svg?branch=master
-[travis]: https://travis-ci.org/joshukraine/cmoproject.org
+[travis-svg]: https://travis-ci.org/euroteamoutreach/cmoproject.org.svg?branch=master
+[travis]: https://travis-ci.org/euroteamoutreach/cmoproject.org
 [gemnasium-svg]: https://gemnasium.com/badges/github.com/joshukraine/cmoproject.org.svg
 [gemnasium]: https://gemnasium.com/github.com/joshukraine/cmoproject.org
 [cmo]: https://cmoproject.org/
@@ -127,4 +127,4 @@ Copyright &copy; 2017 Euro Team Outreach, Inc. Software is licensed under [MIT][
 [cdennis]: https://twitter.com/craigmdennis
 [cdennis-video]: https://youtu.be/-io8EeB3GHI
 [cdennis-github]: https://github.com/craigmdennis/middleman-gulp-starter
-[license]: https://github.com/joshukraine/cmoproject.org/blob/master/LICENSE
+[license]: https://github.com/euroteamoutreach/cmoproject.org/blob/master/LICENSE
