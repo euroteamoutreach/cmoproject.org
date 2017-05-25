@@ -83,7 +83,7 @@ describe "footer nav links", type: :feature do
     visit "/faq"
     within "footer.copyright-footer" do
       find("a.github").click
-      expect(current_url).to eq("https://github.com/joshukraine/cmoproject.org")
+      expect(current_url).to eq("https://github.com/euroteamoutreach/cmoproject.org")
     end
   end
 end
