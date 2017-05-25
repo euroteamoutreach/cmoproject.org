@@ -21,6 +21,8 @@
     "production": "NODE_ENV=production gulp production"
   },
   "devDependencies": {
+    "bourbon": "4.2.7",
+    "bourbon-neat": "1.8.0",
     "browser-sync": "^2.18.12",
     "browserify": "^14.0.0",
     "del": "^2.2.2",
