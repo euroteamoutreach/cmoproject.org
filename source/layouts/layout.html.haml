@@ -1,5 +1,5 @@
 !!!
-%html
+%html{ lang: "en" }
   %head
     = partial "partials/head_contents"
   %body{ class: page_classes }
@@ -9,3 +9,4 @@
     = partial "partials/contact"
     = partial "partials/universal-footer"
     = partial "partials/copyright-footer"
+    = partial "partials/statcounter" if production?
