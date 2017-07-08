@@ -1,6 +1,7 @@
 #content-wrapper {
   padding-top: 69px;
   background-color: $base-background-color;
+  flex: 1 0 auto;
 
   @include media ($phone-landscape) {
     padding-top: 54px;
