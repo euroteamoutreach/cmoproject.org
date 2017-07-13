@@ -8,6 +8,11 @@
   }
 }
 
+.has-sticky-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .announcements {
   border-radius: $base-border-radius;
   box-shadow: 0 2px 4px darken($light-gray, 10%);

@@ -2,7 +2,7 @@
 %html{ lang: "en" }
   %head
     = partial "partials/head_contents"
-  %body{ class: page_classes }
+  %body{ class: "#{page_classes} has-sticky-footer" }
     = partial "partials/header"
     #content-wrapper
       = yield
