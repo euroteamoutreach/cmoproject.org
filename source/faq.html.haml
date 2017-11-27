@@ -7,10 +7,6 @@ title: Frequently Asked Questions
     .hero-copy
       %h1 Frequently Asked Questions
 %section.page-content
-  %article.announcements
-    %h6.closed
-      CMO has been postponed until 2018.
-      Please #{link_to "read the announcement", "/announcement"} for details.
   %ul.accordion.fa-ul
     - data["questions"].each do |question|
       = partial "partials/question", locals: { question: question }
