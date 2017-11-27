@@ -9,9 +9,7 @@ the_plan:
   <p>On weekdays, we conduct large-scale literature outreaches in L&rsquo;viv and other urban centers.</p>"
 
 when_where_how:
-  "<p class=\"closed\"><strong>CMO has been postponed until 2018. Please <a href=\"/announcement\">read the announcement</a> for details.</strong></p>
-  <hr>
-  <p>CMO %{current_project_year} will begin on <strong>%{project_start_date}</strong> and last through <strong>%{project_end_date}</strong>.</p>
+  "<p>CMO %{current_project_year} will begin on <strong>%{project_start_date}</strong> and last through <strong>%{project_end_date}</strong>.</p>
   <p>While ministering in the Carpathians, team members live on a fairly primitive level. We cook meals on camp stoves, sleep in tents, and often walk many miles a day. Mountain weather is frequently rainy, and temperatures can change drastically over short periods of time.</p>
   <p>City ministry tends to be hot and dry. Here too, we walk for miles on end, distributing tens of thousands of tracts each week.</p>"
 
