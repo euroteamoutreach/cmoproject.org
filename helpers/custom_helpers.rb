@@ -1,22 +1,30 @@
 module CustomHelpers
   def current_project_year
-    "2016"
+    "2018"
   end
 
   def project_start_date
-    "June 20, #{current_project_year}"
+    "July 12, #{current_project_year}"
   end
 
   def project_end_date
-    "August 5, #{current_project_year}"
+    "August 6, #{current_project_year}"
   end
 
   def max_arrival_date
-    "June 22"
+    "July 12"
   end
 
   def operations_fee
-    "140"
+    "650"
+  end
+
+  def personal_support
+    "600"
+  end
+
+  def total_cost
+    (operations_fee.to_i + personal_support.to_i).to_s
   end
 
   def weekly_cost
@@ -27,14 +35,18 @@ module CustomHelpers
     "16"
   end
 
+  def statement_faith_page
+    "7"
+  end
+
   def registration_deadline
     "April 1, #{current_project_year}"
   end
 
   def data_sub(string)
     variables = %w{current_project_year project_start_date project_end_date
-                   operations_fee weekly_cost max_arrival_date
-                   info_pack_finance_page}
+                   operations_fee personal_support total_cost weekly_cost max_arrival_date
+                   info_pack_finance_page statement_faith_page}
     variables.each do |variable|
       value = send(variable)
       string.gsub!("%{#{variable}}", value)
