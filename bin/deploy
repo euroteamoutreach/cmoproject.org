@@ -10,6 +10,15 @@ if [[ $# -ne 1 ]]; then
 	echo "Please specify an environment."
 	exit 1
 else
-	bundle exec middleman build --clean --environment="$ENV"
-	bundle exec middleman s3_sync --environment="$ENV"
+  if [[ $ENV =~ ^production$ ]]; then
+    read -p "You are about to deploy to production. Are you sure? (y/n) " -n 1 -r
+    echo    # move to a new line
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+      bundle exec middleman build --clean --environment=production
+      bundle exec middleman s3_sync --environment=production
+    fi
+  else
+    bundle exec middleman build --clean --environment="$ENV"
+    bundle exec middleman s3_sync --environment="$ENV"
+  fi
 fi
