@@ -101,6 +101,17 @@ module CustomHelpers
     end
   end
 
+  def smart_robots(path, env)
+    # Add paths (like "thank you" pages) that search engines should not index.
+    # Multiple paths look like this:
+    # /first_path|another_path|yet_another/
+    if !!(path =~ /thanks/) || env != "production"
+      "noindex, nofollow"
+    else
+      "index, follow"
+    end
+  end
+
   # https://robots.thoughtbot.com/organized-workflow-for-svg
   # https://gist.github.com/bitmanic/0047ef8d7eaec0bf31bb
   def inline_svg(filename, options = {})
