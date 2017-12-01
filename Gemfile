@@ -9,6 +9,7 @@ gem "haml", "~> 5.0", ">= 5.0.1"
 gem "nokogiri", "~> 1.8"
 gem "haml_lint"
 gem "scss_lint"
+gem 'mime-types', '~> 3.1'
 
 group :development do
   gem "rspec", "~> 3.6"
