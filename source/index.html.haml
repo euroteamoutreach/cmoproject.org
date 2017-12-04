@@ -11,11 +11,20 @@ layout: home
     %nav{role: "navigation"}
       %ul#js-navigation-menu-tra.navigation-menu.show
         = partial "partials/nav-links"
-%section#alpha
-  %h1 Carpathian Mountain Outreach
-  %p “Go ye therefore, and teach all nations...” (Matthew 28:19)
+
+%section.alpha
+
+  .alpha-logo
+    = inline_svg "cmo-logo-full.svg", class: "svg-logo"
+
+  %h1 CMO is back for 2018!
+
+  = link_to("/apply", class: "button") do
+    = content_tag :button, "Apply Now", class: "alpha-button"
+
   %a.scroll.scroll-on-page-link{href: "#call-to-men"}
     %i.fa.fa-chevron-down.fa-2x.animated
+
 %section#call-to-men
   .wrap
     %aside
@@ -23,6 +32,7 @@ layout: home
     %article
       %h2 A Call to Men
       = data.content.call_to_men
+
 %section#cmo-men-sunset
   #js-fadeInElement.fade-in-element
     %h2 Got 1 minute?
@@ -39,6 +49,7 @@ layout: home
             .video-wrapper
               %iframe{allowfullscreen: "", frameborder: "0", mozallowfullscreen: "", src: "https://player.vimeo.com/video/56083375?color=2196F3&portrait=0", webkitallowfullscreen: ""}
     %p#full-movie-link= link_to "Or watch the full movie here", "/movie"
+
 %section#the-plan
   .wrap
     .cards
@@ -63,4 +74,5 @@ layout: home
           %h5 Basic Requirements
         .card-copy
           = data.content.requirements
+
 %section#camping-landscape
