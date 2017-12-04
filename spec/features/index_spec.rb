@@ -3,7 +3,7 @@ describe "home page", type: :feature do
     visit "/"
   end
 
-  it "displays the correct heading" do
-    expect(page).to have_selector("h1", text: "Carpathian Mountain Outreach")
+  it "displays the alpha section" do
+    expect(page).to have_css("section.alpha")
   end
 end
