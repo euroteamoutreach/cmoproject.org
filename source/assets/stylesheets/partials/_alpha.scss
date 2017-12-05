@@ -4,7 +4,7 @@
   background-size: cover;
   color: $white;
   height: 100vh;
-  padding: 10em;
+  padding: 8em;
   text-align: center;
   width: 100%;
 
@@ -31,7 +31,17 @@
     p { display: none; }
   }
 
-  h1 { color: $white; }
+  h2 {
+    color: $white;
+
+    @include media ($phone-landscape) {
+      font-size: $h3-font-size;
+    }
+
+    @include media ($phone-portrait) {
+      font-size: $h5-font-size;
+    }
+  }
 
   .scroll {
     bottom: 2em;
@@ -44,11 +54,17 @@
 }
 
 .alpha-logo {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 
   .svg-logo {
-    height: 25%;
-    width: 25%;
+    height: 20%;
+    width: 20%;
+
+    @media (min-height: 600px) {
+      height: 25%;
+      width: 25%;
+    }
+
 
     @include media ($tablet-landscape) {
       height: 40%;
