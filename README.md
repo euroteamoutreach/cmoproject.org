@@ -1,7 +1,7 @@
 cmoproject.org
 ==============
 
-[![Build Status][travis-svg]][travis] [![Dependency Status][gemnasium-svg]][gemnasium]
+[![Build Status][travis-svg]][travis]
 
 [cmoproject.org][cmo] is the official web site for Carpathian Mountain Outreach, a short-term missions project hosted annually by [Euro Team Outreach, Inc.][eto] in Western Ukraine.
 
@@ -107,8 +107,6 @@ Copyright &copy; 2017 Euro Team Outreach, Inc. Software is licensed under [MIT][
 
 [travis-svg]: https://travis-ci.org/euroteamoutreach/cmoproject.org.svg?branch=master
 [travis]: https://travis-ci.org/euroteamoutreach/cmoproject.org
-[gemnasium-svg]: https://gemnasium.com/badges/github.com/euroteamoutreach/cmoproject.org.svg
-[gemnasium]: https://gemnasium.com/github.com/euroteamoutreach/cmoproject.org
 [cmo]: https://cmoproject.org/
 [cmo-logo]: https://s3.amazonaws.com/images.cmoproject.org/cmo-logo.png
 [eto]: https://euroteamoutreach.org/
