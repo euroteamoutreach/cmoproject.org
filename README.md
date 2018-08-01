@@ -13,8 +13,8 @@ Requirements
 ------------
 
 * [Middleman 4.x][middleman-docs]
-* [Ruby 2.x][rbenv]
-* [Node 6.x][nvm]
+* [Ruby 2.x][ruby]
+* [Node 8.x][nodejs]
 * [Gulp CLI][gulp-cli]
 
 
@@ -103,26 +103,26 @@ The Carpathian Mountain Outreach logo is a trademark of [Euro Team Outreach, Inc
 Legal
 -----
 
-Copyright &copy; 2017 Euro Team Outreach, Inc. Software is licensed under [MIT][license].
+Copyright &copy; 2018 Euro Team Outreach, Inc. Software is licensed under [MIT][license].
 
-[travis-svg]: https://travis-ci.org/euroteamoutreach/cmoproject.org.svg?branch=master
-[travis]: https://travis-ci.org/euroteamoutreach/cmoproject.org
-[cmo]: https://cmoproject.org/
+[aws-cert-manager]: https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/
+[aws-s3-deployment]: https://aws.amazon.com/getting-started/projects/host-static-website/
+[cdennis-github]: https://github.com/craigmdennis/middleman-gulp-starter
+[cdennis-video]: https://youtu.be/-io8EeB3GHI
+[cdennis]: https://twitter.com/craigmdennis
 [cmo-logo]: https://s3.amazonaws.com/images.cmoproject.org/cmo-logo.png
+[cmo]: https://cmoproject.org/
 [eto]: https://euroteamoutreach.org/
-[screenshot]: https://s3.amazonaws.com/images.cmoproject.org/cmoproject-screenshot.jpg
-[middleman]: https://middlemanapp.com/
-[middleman-docs]: https://middlemanapp.com/basics/install/
-[rbenv]: https://github.com/rbenv/rbenv#readme
-[nvm]: https://github.com/creationix/nvm#readme
+[external-pipeline]: https://middlemanapp.com/advanced/external-pipeline/
 [gulp-cli]: https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started
 [gulp]: http://gulpjs.com/
-[external-pipeline]: https://middlemanapp.com/advanced/external-pipeline/
-[aws-s3-deployment]: http://docs.aws.amazon.com/gettingstarted/latest/swh/website-hosting-intro.html
-[aws-cert-manager]: https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/
-[upcase-video]: https://upcase.com/videos/building-static-sites-with-middleman
-[mm-sample-app]: https://github.com/thoughtbot/upcase-middleman-sample
-[cdennis]: https://twitter.com/craigmdennis
-[cdennis-video]: https://youtu.be/-io8EeB3GHI
-[cdennis-github]: https://github.com/craigmdennis/middleman-gulp-starter
 [license]: https://github.com/euroteamoutreach/cmoproject.org/blob/master/LICENSE
+[middleman-docs]: https://middlemanapp.com/basics/install/
+[middleman]: https://middlemanapp.com/
+[mm-sample-app]: https://github.com/thoughtbot/upcase-middleman-sample
+[nodejs]: https://github.com/asdf-vm/asdf-nodejs
+[ruby]: https://github.com/asdf-vm/asdf-ruby
+[screenshot]: https://s3.amazonaws.com/images.cmoproject.org/cmoproject-screenshot.jpg
+[travis-svg]: https://travis-ci.org/euroteamoutreach/cmoproject.org.svg?branch=master
+[travis]: https://travis-ci.org/euroteamoutreach/cmoproject.org
+[upcase-video]: https://upcase.com/videos/building-static-sites-with-middleman
