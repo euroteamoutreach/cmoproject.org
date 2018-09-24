@@ -14,4 +14,4 @@ bundle install
 
 # Install node packages
 echo "Installing Node package dependencies..."
-npm install
+yarn install
