@@ -15,6 +15,7 @@ Requirements
 * [Middleman 4.x][middleman-docs]
 * [Ruby 2.x][ruby]
 * [Node 8.x][nodejs]
+* [Yarn][yarn]
 * [Gulp CLI][gulp-cli]
 
 
@@ -126,3 +127,4 @@ Copyright &copy; 2018 Euro Team Outreach, Inc. Software is licensed under [MIT][
 [travis-svg]: https://travis-ci.org/euroteamoutreach/cmoproject.org.svg?branch=master
 [travis]: https://travis-ci.org/euroteamoutreach/cmoproject.org
 [upcase-video]: https://upcase.com/videos/building-static-sites-with-middleman
+[yarn]: https://yarnpkg.com/en/
