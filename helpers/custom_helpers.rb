@@ -1,18 +1,18 @@
 module CustomHelpers
   def current_project_year
-    "2018"
+    "2019"
   end
 
   def project_start_date
-    "July 12, #{current_project_year}"
+    "June 12, #{current_project_year}"
   end
 
   def project_end_date
-    "August 6, #{current_project_year}"
+    "July 8, #{current_project_year}"
   end
 
   def max_arrival_date
-    "July 12"
+    "June 12"
   end
 
   def operations_fee
@@ -40,7 +40,7 @@ module CustomHelpers
   end
 
   def registration_deadline
-    "April 1, #{current_project_year}"
+    "April 15, #{current_project_year}"
   end
 
   def data_sub(string)
@@ -62,7 +62,7 @@ module CustomHelpers
     end
   end
 
-  def full_title(page_title=nil, site_title)
+  def full_title(site_title, page_title = nil)
     page_title ||= ""
     if page_title.empty?
       site_title
