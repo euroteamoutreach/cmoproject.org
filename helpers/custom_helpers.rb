@@ -4,7 +4,7 @@ module CustomHelpers
   end
 
   def project_start_date
-    "June 12, #{current_project_year}"
+    "June 13, #{current_project_year}"
   end
 
   def project_end_date
