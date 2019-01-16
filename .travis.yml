@@ -4,6 +4,8 @@ node_js:
 
 before_install:
   - rvm install 2.6.0
+  - gem update --system
+  - gem install bundler
 
 install:
   - bundle install
