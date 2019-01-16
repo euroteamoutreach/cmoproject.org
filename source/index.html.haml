@@ -17,14 +17,10 @@ layout: home
   .alpha-logo
     = inline_svg "cmo-logo-full.svg", class: "svg-logo"
 
-  %h2 CMO is back for 2018!
+  %h2 CMO 2019 Registration is Open!
 
-  = link_to("#call-to-men", class: "button scroll-on-page-link") do
-    = content_tag :button, "Learn More", class: "alpha-button"
-
-  = link_to("https://euroteamoutreach.org/blog/2018/08/push-for-the-summit/",
-    class: "button", target: "_blank") do
-    = content_tag :button, "Current eReport", class: "alpha-button"
+  = link_to("/apply", class: "button") do
+    = content_tag :button, "Apply Now", class: "alpha-button"
 
   %a.scroll.scroll-on-page-link{ href: "#call-to-men" }
     %i.fa.fa-chevron-down.fa-2x.animated

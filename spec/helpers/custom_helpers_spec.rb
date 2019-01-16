@@ -54,7 +54,7 @@ describe CustomHelpers do
       it "provides only the base title" do
         site_title = "MAIN SITE TITLE"
         page_title = nil
-        expect(full_title(page_title, site_title)).to eq("MAIN SITE TITLE")
+        expect(full_title(site_title, page_title)).to eq("MAIN SITE TITLE")
       end
     end
 
@@ -62,7 +62,7 @@ describe CustomHelpers do
       it "displays the custom title and the base title separated by a pipe" do
         site_title = "MAIN SITE TITLE"
         page_title = "Custom"
-        expect(full_title(page_title, site_title)).to eq("Custom | MAIN SITE TITLE")
+        expect(full_title(site_title, page_title)).to eq("Custom | MAIN SITE TITLE")
       end
     end
   end
