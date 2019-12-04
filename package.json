@@ -1,54 +1,38 @@
 {
-  "name": "middleman-gulp",
-  "version": "2.2.0",
-  "description": "A Middleman 4 template using Gulp.js",
-  "author": "Joshua Steele <joshukraine@gmail.com>",
-  "homepage": "https://jsua.co/mm-gulp",
-  "license": "MIT",
-  "keywords": [
-    "middleman",
-    "gulp"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joshukraine/middleman-gulp.git"
-  },
-  "bugs": {
-    "url": "https://github.com/joshukraine/middleman-gulp/issues"
-  },
+  "name": "cmoproject.org",
+  "version": "1.0.0",
+  "description": "The official web site for Carpathian Mountain Outreach",
+  "author": "Euro Team Outreach, Inc.",
+  "private": true,
   "scripts": {
-    "development": "NODE_ENV=development gulp default",
-    "production": "NODE_ENV=production gulp production"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
-  "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "browserify": "^16.2.2",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-changed": "^3.1.0",
-    "gulp-clean-css": "^3.5.0",
-    "gulp-environments": "^0.1.2",
-    "gulp-imagemin": "^4.0.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sizereport": "^1.2.0",
-    "gulp-sourcemaps": "^2.4.0",
-    "gulp-strip-debug": "^3.0.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "run-sequence": "^2.0.0",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^2.0.0"
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
-    "bourbon": "4.3.4",
-    "bourbon-neat": "1.9.0",
-    "jquery": "^3.2.1",
-    "moment": "^2.18.1",
-    "webfontloader": "^1.6.28"
+    "nuxt": "^2.0.0",
+    "@nuxtjs/dotenv": "^1.4.0"
   },
-  "engines": {
-    "node": ">= 8.11.3"
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "husky": "^2.6.0",
+    "lint-staged": "^8.2.1",
+    "@nuxtjs/stylelint-module": "^3.1.0",
+    "stylelint": "^10.1.0"
   }
 }
