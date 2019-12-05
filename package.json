@@ -1,6 +1,5 @@
 {
   "name": "cmoproject.org",
-  "version": "1.0.0",
   "description": "The official web site for Carpathian Mountain Outreach",
   "author": "Euro Team Outreach, Inc.",
   "private": true,
@@ -12,7 +11,12 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint"
+    "*.vue": [
+      "eslint --fix",
+      "stylelint --fix"
+    ],
+    "*.js": "eslint --fix",
+    "*.css": "stylelint --fix"
   },
   "husky": {
     "hooks": {
@@ -20,19 +24,19 @@
     }
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "@nuxtjs/dotenv": "^1.4.0"
+    "@nuxtjs/dotenv": "^1.4.0",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^1.0.0",
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^1.2.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^6.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "husky": "^2.6.0",
-    "lint-staged": "^8.2.1",
-    "@nuxtjs/stylelint-module": "^3.1.0",
-    "stylelint": "^10.1.0"
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-vue": "^6.0.1",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "stylelint": "^12.0.0",
+    "stylelint-order": "^3.1.1"
   }
 }
