@@ -1,18 +1,18 @@
 module CustomHelpers
   def current_project_year
-    "2019"
+    "2020"
   end
 
   def project_start_date
-    "June 13, #{current_project_year}"
+    "June 17, #{current_project_year}"
   end
 
   def project_end_date
-    "July 8, #{current_project_year}"
+    "July 13, #{current_project_year}"
   end
 
   def max_arrival_date
-    "June 12"
+    "June 17"
   end
 
   def operations_fee
