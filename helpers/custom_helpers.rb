@@ -16,7 +16,7 @@ module CustomHelpers
   end
 
   def operations_fee
-    "650"
+    "700"
   end
 
   def personal_support
