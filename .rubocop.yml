@@ -11,6 +11,9 @@ AllCops:
 Style/Documentation:
   Enabled: false
 
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
 Metrics/LineLength:
   Max: 120
 
