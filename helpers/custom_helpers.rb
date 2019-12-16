@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module CustomHelpers
   def current_project_year
     "2020"
@@ -44,9 +46,9 @@ module CustomHelpers
   end
 
   def data_sub(string)
-    variables = %w{current_project_year project_start_date project_end_date
-                   operations_fee personal_support total_cost weekly_cost max_arrival_date
-                   info_pack_finance_page statement_faith_page}
+    variables = %w[current_project_year project_start_date project_end_date
+                   operations_fee personal_support total_cost weekly_cost
+                   max_arrival_date info_pack_finance_page statement_faith_page]
     variables.each do |variable|
       value = send(variable)
       string.gsub!("%{#{variable}}", value)
@@ -108,9 +110,7 @@ module CustomHelpers
   end
 
   def add_visible_class(path)
-    unless !!(path =~ /index/)
-      " is-visible"
-    end
+    " is-visible" unless !!(path =~ /index/)
   end
 
   def smart_robots(path, env)
@@ -129,13 +129,11 @@ module CustomHelpers
   def inline_svg(filename, options = {})
     root = Middleman::Application.root
     file_path = "#{root}/source/assets/images/#{filename}"
-    if File.exists?(file_path)
+    if File.exist?(file_path)
       file = File.read(file_path).force_encoding("UTF-8")
       doc = Nokogiri::HTML::DocumentFragment.parse file
       svg = doc.at_css "svg"
-      if options[:class].present?
-        svg["class"] = options[:class]
-      end
+      svg["class"] = options[:class] if options[:class].present?
       doc
     else
       "file not found: #{file_path}"
