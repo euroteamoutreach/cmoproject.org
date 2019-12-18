@@ -10,7 +10,7 @@ gem "middleman-pry", "~> 1.0"
 gem "middleman-s3_sync", "~> 4.0"
 gem "middleman-search_engine_sitemap", "~> 1.4"
 gem "mime-types", "~> 3.1"
-gem "nokogiri", "~> 1.10", ">= 1.10.1"
+gem "nokogiri", "~> 1.10"
 
 group :development do
   gem "capybara", "~> 3.2", ">= 3.2.1"
