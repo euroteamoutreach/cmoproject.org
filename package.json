@@ -20,6 +20,9 @@
     "development": "NODE_ENV=development gulp default",
     "production": "NODE_ENV=production gulp production"
   },
+  "browserslist": [
+    "last 3 versions", "> 5%"
+  ],
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "browserify": "^16.2.2",
