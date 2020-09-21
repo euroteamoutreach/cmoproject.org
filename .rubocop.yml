@@ -11,6 +11,9 @@ AllCops:
 Style/Documentation:
   Enabled: false
 
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
 Metrics/LineLength:
   Max: 120
 
@@ -26,8 +29,6 @@ Metrics/MethodLength:
 
 Metrics/ClassLength:
   Max: 150
-#   Exclude:
-#     - ''
 
 Metrics/ParameterLists:
   Exclude:
