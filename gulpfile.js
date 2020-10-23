@@ -37,10 +37,6 @@ var
     errLogToConsole: true
   },
 
-  autoprefixerOpts = {
-    browsers: ['last 3 versions', '> 5%']
-  },
-
   js = {
     in: src + 'assets/javascripts/*.{js,coffee}',
     out: dest + 'assets/javascripts/'
@@ -71,7 +67,7 @@ gulp.task('css', function() {
   return gulp.src(css.in)
     .pipe(development(p.sourcemaps.init()))
     .pipe(p.sass(sassOpts).on('error', p.sass.logError))
-    .pipe(p.autoprefixer(autoprefixerOpts)).on('error', handleError)
+    .pipe(p.autoprefixer()).on('error', handleError)
     .pipe(production(p.cleanCss()))
     .pipe(development(p.sourcemaps.write()))
     .pipe(gulp.dest(css.out));
@@ -101,10 +97,10 @@ gulp.task('images', function() {
 });
 
 // Clean .tmp/
-gulp.task('clean', function() {
+gulp.task('clean', function(done) {
   p.del([
     dest + '*'
-  ]);
+  ]), done();
 });
 
 // Asset Size Report
@@ -118,27 +114,25 @@ gulp.task('sizereport', function () {
 // 4. SUPER TASKS
 
 // Development Task
-gulp.task('development', function(done) {
-  p.runSequence('clean', 'css', 'js', 'images', done);
-});
+gulp.task('development', gulp.series('clean', 'css', 'js', 'images'));
 
 // Production Task
-gulp.task('production', function(done) {
-  p.runSequence('clean', 'css', 'js', 'images', 'sizereport', done);
-});
+gulp.task('production', gulp.series
+  ('clean', 'css', 'js', 'images', 'sizereport')
+);
 
 // Default Task
 // This is the task that will be invoked by Middleman's exteranal pipeline when
 // running 'middleman server'
-gulp.task('default', ['development'], function() {
+gulp.task('default', gulp.series('development', function browsersync () {
 
   p.browserSync.init(serverOpts);
 
-  gulp.watch(css.in, ['css']);
-  gulp.watch(js.in, ['js']);
-  gulp.watch(images.in, ['images']);
+  gulp.watch(css.in, gulp.series('css'));
+  gulp.watch(js.in, gulp.series('js'));
+  gulp.watch(images.in, gulp.series('images'));
 
-});
+}));
 
 function handleError(err) {
   console.log(err.toString());
