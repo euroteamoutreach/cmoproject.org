@@ -3,7 +3,7 @@ node_js:
   - "12"
 
 before_install:
-  - rvm install 2.6.6
+  - rvm install 2.7.1
   - gem update --system
   - gem install bundler
 
