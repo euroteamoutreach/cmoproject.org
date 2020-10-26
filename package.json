@@ -21,12 +21,13 @@
     "production": "NODE_ENV=production gulp production"
   },
   "browserslist": [
-    "last 3 versions", "> 5%"
+    "last 3 versions",
+    "> 5%"
   ],
   "devDependencies": {
     "browser-sync": "^2.18.12",
-    "browserify": "^16.2.2",
-    "del": "^5.0.0",
+    "browserify": "^17.0.0",
+    "del": "^6.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-changed": "^4.0.0",
