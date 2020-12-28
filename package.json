@@ -37,7 +37,7 @@
     "gulp-load-plugins": "^2.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sizereport": "^1.2.0",
-    "gulp-sourcemaps": "^2.4.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-strip-debug": "^3.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
