@@ -42,12 +42,6 @@ var
     out: dest + 'assets/javascripts/'
   },
 
-  uglifyOpts = {
-    output: {
-      comments: 'uglify-save-license'
-    }
-  },
-
   images = {
     in: src + 'assets/images/*',
     out: dest + 'assets/images/'
@@ -84,7 +78,9 @@ gulp.task('js', function() {
     .pipe(p.source('bundle.js'))
     .pipe(production() ? p.buffer() : p.gutil.noop())
     .pipe(production(p.stripDebug()))
-    .pipe(production() ? p.uglify(uglifyOpts) : p.gutil.noop())
+    .pipe(production(p.sourcemaps.init()))
+    .pipe(production(p.terser()))
+    .pipe(production(p.sourcemaps.write()))
     .pipe(gulp.dest(js.out));
 });
 
