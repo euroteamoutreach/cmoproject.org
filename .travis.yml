@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-  - "12"
+  - "14"
 
 before_install:
-  - rvm install 2.7.1
+  - rvm install 2.7.2
   - gem update --system
   - gem install bundler
 
