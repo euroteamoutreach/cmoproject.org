@@ -104,7 +104,7 @@ The Carpathian Mountain Outreach logo is a trademark of [Euro Team Outreach, Inc
 Legal
 -----
 
-Copyright &copy; 2020 Euro Team Outreach, Inc. Software is licensed under [MIT][license].
+Copyright &copy; 2021 Euro Team Outreach, Inc. Software is licensed under [MIT][license].
 
 [aws-cert-manager]: https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/
 [aws-s3-deployment]: https://aws.amazon.com/getting-started/projects/host-static-website/
