@@ -17,10 +17,15 @@ layout: home
   .alpha-logo
     = inline_svg "cmo-logo-full.svg", class: "svg-logo"
 
-  %h2 CMO is back for 2020!
-  %p Project begins June 17 and ends July 13.
-  = link_to("/apply", class: "button") do
-    = content_tag :button, "Apply Now"
+  .alpha-news
+    %h2 CMO 2021 Update
+    %p
+      Due to complications arising from the COVID-19 pandemic, we have made the
+      difficult decision to cancel CMO 2021. Lord willing, the project will
+      resume in the summer of 2022.
+    = link_to("https://euroteamoutreach.org/blog/2021/03/cmo-in-a-covid-world/",
+      class: "button", target: "_blank") do
+      = content_tag :button, "Read the Announcement"
 
   %a.scroll.scroll-on-page-link{ href: "#call-to-men" }
     %i.fa.fa-chevron-down.fa-2x.animated
