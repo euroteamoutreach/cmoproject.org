@@ -61,7 +61,7 @@ GEM
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     ipaddress (0.8.3)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     launchy (2.5.0)
       addressable (~> 2.7)
