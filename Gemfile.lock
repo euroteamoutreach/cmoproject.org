@@ -128,10 +128,10 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2021.0225)
     mini_mime (1.1.0)
-    mini_portile2 (2.5.0)
+    mini_portile2 (2.5.1)
     minitest (5.14.4)
     multi_json (1.15.0)
-    nokogiri (1.11.3)
+    nokogiri (1.11.4)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     padrino-helpers (0.13.3.4)
@@ -199,7 +199,7 @@ DEPENDENCIES
   middleman-s3_sync (~> 4.0)
   middleman-search_engine_sitemap (~> 1.4)
   mime-types (~> 3.1)
-  nokogiri (~> 1.10, >= 1.10.1)
+  nokogiri (~> 1.11)
   rspec (~> 3.7)
 
 BUNDLED WITH
