@@ -29,7 +29,7 @@
     "browserify": "^17.0.0",
     "del": "^6.0.0",
     "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^7.0.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-changed": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-environments": "^1.0.0",
