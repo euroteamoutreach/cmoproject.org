@@ -2,19 +2,19 @@
 
 module CustomHelpers
   def current_project_year
-    "2020"
+    "2023"
   end
 
   def project_start_date
-    "June 17, #{current_project_year}"
+    "August 8, #{current_project_year}"
   end
 
   def project_end_date
-    "July 13, #{current_project_year}"
+    "August 30, #{current_project_year}"
   end
 
   def max_arrival_date
-    "June 17"
+    "August 8"
   end
 
   def operations_fee
@@ -42,7 +42,7 @@ module CustomHelpers
   end
 
   def registration_deadline
-    "April 15, #{current_project_year}"
+    "June 1, #{current_project_year}"
   end
 
   def data_sub(string)
