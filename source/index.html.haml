@@ -18,12 +18,18 @@ layout: home
     = inline_svg "cmo-logo-full.svg", class: "svg-logo"
 
   .alpha-news
-    %h2 CMO 2022 has been cancelled. 😢
+    %div
+      = inline_svg "cmo-2023-stencil.svg", class: "svg-cmo-stencil"
     %p
-      But there's more to the story. Find out the latest on the ETO blog...
+      “Go ye therefore, and teach all nations...” (Matthew 28:19)
+    %p.go-time It's time to go.
+
     = link_to("https://euroteamoutreach.org/blog/2022/05/cmo-the-war-the-future/",
       class: "button", target: "_blank") do
-      = content_tag :button, "☀️ CMO, the War, and the Future"
+      = content_tag :button, "Read the Announcement"
+
+    = link_to("/apply", class: "button") do
+      = content_tag :button, "Apply Now"
 
   %a.scroll.scroll-on-page-link{ href: "#call-to-men" }
     %i.fa.fa-chevron-down.fa-2x.animated

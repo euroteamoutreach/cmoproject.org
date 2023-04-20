@@ -8,6 +8,8 @@
   text-align: center;
   width: 100%;
 
+  p { font-size: $h6-font-size; }
+
   @include media ($tablet-portrait) {
     background-image: url(#{$assets-images-path}cmo-hiker-portrait-blur.jpg);
     padding: 8em 2em 2em;
@@ -20,6 +22,7 @@
     padding: 6em 3em 3em;
 
     h1 { font-size: $h3-font-size; }
+    p { font-size: $h5-font-size; }
     p { display: none; }
   }
 
@@ -28,6 +31,7 @@
     padding: 6em 2em 2em;
 
     h1 { font-size: $h3-font-size; }
+    p { font-size: $h5-font-size; }
     p { display: none; }
   }
 
@@ -62,24 +66,15 @@
   margin-bottom: 3em;
 
   .svg-logo {
-    height: 20%;
-    width: 20%;
-
-    @media (min-height: 600px) {
-      height: 25%;
-      width: 25%;
-    }
-
-
-    @include media ($tablet-landscape) {
-      height: 40%;
-      width: 40%;
-    }
+    height: 40%;
+    width: 40%;
+    max-width: 300px;
 
     @include media ($phone-landscape) {
       height: 50%;
       width: 50%;
     }
+
   }
 }
 
@@ -96,4 +91,15 @@ button {
 .alpha-news {
   margin: 0 auto;
   max-width: 700px;
+
+  p.go-time {
+    font-size: $h3-font-size;
+    font-weight: 600;
+  }
+
+  .svg-cmo-stencil {
+    height: 15%;
+    width: 50%;
+    margin-bottom: $base-spacing;
+  }
 }

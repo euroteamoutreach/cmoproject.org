@@ -28,5 +28,11 @@
     @include media ($phone-portrait) {
       p { font-size: 0.9em; }
     }
+
+    .apply-button {
+      button {
+        margin: 0;
+      }
+    }
   }
 }
