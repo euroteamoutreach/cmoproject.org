@@ -41,6 +41,10 @@ module CustomHelpers
     "10"
   end
 
+  def info_pack_page_length
+    "22"
+  end
+
   def registration_deadline
     "June 1, #{current_project_year}"
   end
@@ -49,7 +53,7 @@ module CustomHelpers
     variables = %w[current_project_year project_start_date project_end_date
                    operations_fee personal_support total_cost weekly_cost
                    max_arrival_date info_pack_finance_page
-                   info_pack_gear_list_page]
+                   info_pack_gear_list_page info_pack_page_length]
     variables.each do |variable|
       value = send(variable)
       string.gsub!("%{#{variable}}", value)

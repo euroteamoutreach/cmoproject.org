@@ -1,9 +1,9 @@
 - title: Info Pack
   image: "cmo-info-pack-icon.svg"
   body: >
-    <p>This full-color, 22-page PDF document provides further details about the
-    project including ministry outlines, gear requirements, costs, housing, and
-    more.</p>
+    <p>This full-color, %{info_pack_page_length}-page PDF document provides
+    further details about the project including ministry outlines, gear
+    requirements, costs, housing, and more.</p>
   path: info_pack_path
 
 - title: Ministry Guidelines
