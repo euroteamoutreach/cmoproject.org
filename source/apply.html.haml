@@ -17,5 +17,12 @@ title: Apply for CMO
 
   %h5 How to Apply
   %hr
-  - data["apply-steps"].each do |step|
-    = partial "partials/apply-step", locals: { step: step }
+  %div
+    - data["apply-steps"].each do |step|
+      = partial "partials/apply-step", locals: { step: step }
+
+
+  %div.apply-button
+    = link_to("https://docs.google.com/forms/d/e/1FAIpQLSeSK5YwSzc-9CnThtXJv7oZYxLat236DqPfthCfHSiN0p01Kw/viewform?usp=sf_link",
+      class: "button", target: "_blank") do
+      = content_tag :button, "BEGIN ONLINE APPLICATION"
