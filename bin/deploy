@@ -2,6 +2,11 @@
 
 # In order to use this script, first configure middleman-s3_sync
 # in config.rb
+#
+# To run this script using 1Password cli credentials, use this command:
+# op run -- bin/deploy production
+#
+# More info: https://developer.1password.com/docs/cli/secrets-environment-variables#export-environment-variables
 
 set -e
 ENV=$1
