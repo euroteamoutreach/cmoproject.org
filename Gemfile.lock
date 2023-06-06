@@ -136,7 +136,7 @@ GEM
     mini_portile2 (2.8.1)
     minitest (5.18.0)
     multi_json (1.15.0)
-    nokogiri (1.13.10)
+    nokogiri (1.14.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     padrino-helpers (0.15.1)
@@ -207,7 +207,7 @@ DEPENDENCIES
   middleman-s3_sync (~> 4.0)
   middleman-search_engine_sitemap (~> 1.4)
   mime-types (~> 3.1)
-  nokogiri (~> 1.13)
+  nokogiri (~> 1.14)
   rspec (~> 3.7)
 
 BUNDLED WITH
