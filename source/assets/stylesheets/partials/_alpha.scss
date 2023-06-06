@@ -4,11 +4,11 @@
   background-size: cover;
   color: $white;
   height: 100vh;
-  padding: 8em;
+  padding: 6em;
   text-align: center;
   width: 100%;
 
-  p { font-size: $h6-font-size; }
+  // p { font-size: $h6-font-size; }
 
   @include media ($tablet-portrait) {
     background-image: url(#{$assets-images-path}cmo-hiker-portrait-blur.jpg);
@@ -22,7 +22,7 @@
     padding: 6em 3em 3em;
 
     h1 { font-size: $h3-font-size; }
-    p { font-size: $h5-font-size; }
+    // p { font-size: $h5-font-size; }
     p { display: none; }
   }
 
@@ -31,7 +31,7 @@
     padding: 6em 2em 2em;
 
     h1 { font-size: $h3-font-size; }
-    p { font-size: $h5-font-size; }
+    // p { font-size: $h5-font-size; }
     p { display: none; }
   }
 
@@ -63,12 +63,12 @@
 }
 
 .alpha-logo {
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
 
   .svg-logo {
-    height: 40%;
-    width: 40%;
-    max-width: 300px;
+    height: 30%;
+    width: 30%;
+    // max-width: 175px;
 
     @include media ($phone-landscape) {
       height: 50%;
@@ -93,13 +93,13 @@ button {
   max-width: 700px;
 
   p.go-time {
-    font-size: $h3-font-size;
+    font-size: $h5-font-size;
     font-weight: 600;
   }
 
   .svg-cmo-stencil {
-    height: 20%;
-    width: 60%;
-    margin-bottom: $base-spacing;
+    height: 10%;
+    width: 30%;
+    margin-bottom: $small-spacing;
   }
 }
