@@ -1,14 +1,34 @@
-- title: "Info Pack"
+- title: Info Pack
   image: "cmo-info-pack-icon.svg"
-  body: "<p>This full-color, 18-page PDF document provides further details about the project including ministry outlines, gear requirements, costs, housing, and more.</p>"
-  path: "info_pack_path"
+  body: >
+    <p>This full-color, %{info_pack_page_length}-page PDF document provides
+    further details about the project including ministry outlines, gear
+    requirements, costs, housing, and more.</p>
+  path: info_pack_path
 
-- title: "Application"
-  image: "cmo-app-icon.svg"
-  body: "<p>Ready to apply? Download the Application, fill it out and mail it to our main office. Please be sure to read the Info Pack before submitting your application.</p>"
-  path: "application_path"
+- title: Ministry Guidelines
+  image: "cmo-guidelines-icon.svg"
+  body: >
+    <p>This document contains a list of the basic guidelines by which all CMO
+    %{current_project_year} team members must abide while serving overseas with
+    Euro Team Outreach.</p>
+  path: ministry_guidelines_path
 
-- title: "Recommendation Form"
-  image: "cmo-rec-form-icon.svg"
-  body: "<p>Give this form to your pastor/church leader to fill out on your behalf. That person should then mail the form to our office directly.</p>"
-  path: "rec_form_path"
+- title: Gear List
+  image: "cmo-gear-list-icon.svg"
+  body: >
+    <p>This is a list of the essential items you will need during CMO
+    %{current_project_year}, including camping gear, clothing, and electronics.
+    Most of the items on this list are required for all team members.</p>
+  path: gear_list_path
+
+- title: Liability Release
+  image: "cmo-release-icon.svg"
+  body: >
+    <p>We hope for the best, but it's important to plan for the unexpected. We
+    want you to be clear about your responsibilties as a participant in CMO
+    %{current_project_year}. Once you've downloaded this release and read it
+    thoroughly, please sign it and scan it to your computer. (Opt for either
+    JPG or PDF format if possible.) You will be asked to upload your signed
+    release during the application process.</p>
+  path: liability_release_path

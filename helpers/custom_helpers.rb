@@ -2,19 +2,19 @@
 
 module CustomHelpers
   def current_project_year
-    "2020"
+    "2023"
   end
 
   def project_start_date
-    "June 17, #{current_project_year}"
+    "August 8, #{current_project_year}"
   end
 
   def project_end_date
-    "July 13, #{current_project_year}"
+    "August 30, #{current_project_year}"
   end
 
   def max_arrival_date
-    "June 17"
+    "August 8"
   end
 
   def operations_fee
@@ -22,7 +22,7 @@ module CustomHelpers
   end
 
   def personal_support
-    "600"
+    "700"
   end
 
   def total_cost
@@ -34,21 +34,26 @@ module CustomHelpers
   end
 
   def info_pack_finance_page
-    "16"
+    "19"
   end
 
-  def statement_faith_page
-    "7"
+  def info_pack_gear_list_page
+    "10"
+  end
+
+  def info_pack_page_length
+    "22"
   end
 
   def registration_deadline
-    "April 15, #{current_project_year}"
+    "June 1, #{current_project_year}"
   end
 
   def data_sub(string)
     variables = %w[current_project_year project_start_date project_end_date
                    operations_fee personal_support total_cost weekly_cost
-                   max_arrival_date info_pack_finance_page statement_faith_page]
+                   max_arrival_date info_pack_finance_page
+                   info_pack_gear_list_page info_pack_page_length]
     variables.each do |variable|
       value = send(variable)
       string.gsub!("%{#{variable}}", value)
@@ -93,12 +98,16 @@ module CustomHelpers
     "/files/cmo-#{current_project_year}-info-pack.pdf"
   end
 
-  def application_path
-    "/files/cmo-#{current_project_year}-application.pdf"
+  def ministry_guidelines_path
+    "/files/cmo-#{current_project_year}-ministry-guidelines.pdf"
   end
 
-  def rec_form_path
-    "/files/cmo-#{current_project_year}-rec-form.pdf"
+  def gear_list_path
+    "/files/cmo-#{current_project_year}-gear-list.pdf"
+  end
+
+  def liability_release_path
+    "/files/cmo-#{current_project_year}-liability-release.pdf"
   end
 
   def contact_text(path)

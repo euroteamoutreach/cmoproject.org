@@ -1,39 +1,127 @@
-- title: "What are the start/end dates for CMO %{current_project_year}?"
-  answer: "<p>CMO %{current_project_year} will begin on %{project_start_date} and end on %{project_end_date}.</p>"
+- title: What are the start/end dates for CMO %{current_project_year}?
+  answer: >
+    <p>CMO %{current_project_year} will begin on %{project_start_date} and end
+    on %{project_end_date}.</p>
 
-- title: "How much does it cost to participate in CMO?"
-  answer: "<p>At present, the cost is about $%{total_cost} minimum. This amount can be broken down into two basic parts: 1) Personal Support (~$%{personal_support}) and 2) Operations Fee ($%{operations_fee}).</p><p>Your personal support is for things like food, transportation costs and other items you will want/need to purchase while in Ukraine. We recommend a minimum personal support level of $%{personal_support}, but ultimately this is up to you. The Operations Fee ($%{operations_fee}) is mandatory for all CMO team members. The fee will cover your rent, utilities, literature, and other ministry-related expenses which you will incur during the project. Your Operations Fee is due in full on the day you arrive in Ukraine. For more details on finances, please refer to the <a href=\"/downloads\">Info Pack</a>, page %{info_pack_finance_page}.</p>"
+- title: How much does it cost to participate in CMO?
+  answer: >
+    <p>At present, the cost is about $%{total_cost} minimum. This amount can be
+    broken down into two basic parts: 1) Personal Support
+    (~$%{personal_support}) and 2) Operations Fee ($%{operations_fee}).</p>
+    <p>Your personal support is for things like food, transportation costs and
+    other items you will want/need to purchase while in Ukraine. We recommend a
+    minimum personal support level of $%{personal_support}, but ultimately this
+    is up to you. The Operations Fee ($%{operations_fee}) is mandatory for all
+    CMO team members. The fee will cover your rent, utilities, literature, and
+    other ministry-related expenses which you will incur during the project.
+    Your Operations Fee is due in full on the day you arrive in Ukraine. For
+    more details on finances, please refer to the <a href="/downloads">Info
+    Pack</a>, page %{info_pack_finance_page}.</p>
 
-- title: "Can I send in my documents electronically?"
-  answer: "<p>Yes. If you would like to avoid the delays associated with regular mail, you may scan your Application and send it to <a href=\"mailto:info@euroteamoutreach.org\">info@euroteamoutreach.org</a>. Please be sure that the scan is in color and of a high enough resolution to be easily readable. In particular, please be sure that your photo is clearly visible. If you prefer, you may include the photo as a separate attachment in the email.</p>"
+- title: >
+    I can't find the Application or Recommendation PDF downloads anymore. What
+    happened?
+  answer: >
+    <p>Beginning in 2023, the application for CMO is to be submitted completely
+    online. For step-by-step instructions, visit the <a href="/apply">Apply</a>
+    page.</p>
 
-- title: "What is the minimum time commitment required to participate in CMO?"
-  answer: "<p>We ask all CMO team members to come for the duration of the project. We feel this will allow team members to receive the maximum benefit and development from their trip. However, if you would like to participate in CMO and are not able to stay that long, we would still like to talk to you. Please <a href=\"mailto:info@euroteamoutreach.org\">contact us</a> to discuss the details of your particular situation. Such cases are ultimately decided on a case by case basis.</p>"
+- title: Can I send in all my documents electronically?
+  answer: >
+    <p>Yep, in fact that's now your only option. No more snail mail! You will
+    need to gather several documents for upload during the application process,
+    including a color photograph and a signed copy of our Liability Release
+    form. For step-by-step instructions, visit the <a href="/apply">Apply</a>
+    page.</p>
 
-- title: "During CMO, what kinds of expenses will I have to cover?"
-  answer: "<p>You will be responsible for any and all expenses that you incur. These include, but are not limited to: apartment rent, ministry expenses, transportation costs (taxi&rsquo;s, trams, bus and train fares, etc.), groceries, camping gear. For a detailed explanation of the financial requirements of CMO, please refer to the <a href=\"/downloads\">Info Pack</a>, page %{info_pack_finance_page}.</p>"
+- title: >
+    Isn't Ukraine still fighting a war with Russia? Is it safe to come to CMO?
+  answer: >
+    <p>It is true that, as of this writing (April 2023), the war in Ukraine is
+    ongoing. However, the majority of the fighting is confined to the far east
+    and south of the country. CMO takes place in the far west of the country.
+    There is certainly risk associated with travel to Ukraine, but we believe
+    that coming to CMO is reasonably safe. Ultimately, this decision will be
+    up to you and will depend on your level of risk tolerance.</p>
 
-- title: "I would like to come for CMO, but I&rsquo;m not sure if I&rsquo;ll have the minimum amount that you specify for monthly support. Can I still come?"
-  answer: "<p>If you are not sure that you will have all the necessary funds for your support while in Ukraine, or if you have less than our recommended minimum, you are still welcome to come. We believe strongly that God is able to provide supernaturally for the needs of those who serve Him. However, make sure it is indeed God who is calling you. If you run short of money while you are here you may have to go home early. Don&rsquo;t build a tower without counting the cost. (Luke 14:26)</p>"
+- title: What is the minimum time commitment required to participate in CMO?
+  answer: >
+    <p>We ask all CMO team members to come for the duration of the project. We
+    feel this will allow team members to receive the maximum benefit and
+    development from their trip. Additionally, due to the current complexities
+    of travel in and out of Ukraine, it is essential that all CMO team members
+    arrive and depart on predetermined days. Please refer to the
+    <a href="/downloads">Info Pack</a> for details on arrival and departure
+    arrangements.</p>
 
-- title: "I&rsquo;d like to participate in CMO, but I don&rsquo;t speak Ukrainian. How can I possibly tell people about Jesus?"
-  answer: "<p>Remember: a prophet is not without honor, save in his own country. Jesus made this observation Himself. If you come to Ukraine from overseas, you will have the ear of Ukrainians in a way that a local minister might not. Several of our staff speak fluent Ukrainian, and we will translate for you when necessary. There is also much that can be done without having to speak at all (e.g. tract distribution, chalk art, multimedia setup, literature printing and collation, etc.)</p>"
+- title: During CMO, what kinds of expenses will I have to cover?
+  answer: >
+    <p>You will be responsible for any and all expenses that you incur. These
+    include, but are not limited to: apartment rent, ministry expenses,
+    transportation costs (taxi&rsquo;s, trams, bus and train fares, etc.),
+    groceries, camping gear. For a detailed explanation of the financial
+    requirements of CMO, please refer to the <a href="/downloads">Info Pack
+    </a>, page %{info_pack_finance_page}.</p>
 
-- title: "I want to come for CMO, but I am under 17. Can I still come?"
-  answer: "<p>Our minimum age requirement for all ETO outreaches is 17. There are many reasons for this, the main ones being maturity and liability concerns. However, we know that God can call someone younger than that. If you are under 17, and you feel strongly that God is calling you to serve with ETO, please <a href=\"mailto:info@euroteamoutreach.org\">contact us</a>. Such requests are evaluated on a case by case basis.</p>"
+- title: >
+    I would like to come for CMO, but I&rsquo;m not sure if I&rsquo;ll have the
+    minimum amount that you specify for monthly support. Can I still come?
+  answer: >
+    <p>If you are not sure that you will have all the necessary funds for your
+    support while in Ukraine, or if you have less than our recommended minimum,
+    you are still welcome to come. We believe strongly that God is able to
+    provide supernaturally for the needs of those who serve Him. However, make
+    sure it is indeed God who is calling you. If you run short of money while
+    you are here you may have to go home early. Don&rsquo;t build a tower
+    without counting the cost. (Luke 14:26)</p>
 
-- title: "I want to come for CMO, but I am not a US/Canadian citizen. Can I still come?"
-  answer: "<p>Our organization deals primarily with US/Canadian citizens. We are a US-based ministry, and all of our materials, application forms, legal documents, etc. are geared for Americans/Canadians.</p><p>At present, the immigration requirements imposed on American or Canadian citizens are fairly lenient. If you are a non-US/Canadian citizen, and you feel that God is calling you to particiate in CMO, please <a href=\"mailto:info@euroteamoutreach.org\">contact us</a>. Such requests are evaluated on a case by case basis.</p>"
+- title: >
+    I&rsquo;d like to participate in CMO, but I don&rsquo;t speak Ukrainian.
+    How can I possibly tell people about Jesus?
+  answer: >
+    <p>Remember: a prophet is not without honor, save in his own country. Jesus
+    made this observation Himself. If you come to Ukraine from overseas, you
+    will have the ear of Ukrainians in a way that a local minister might not.
+    Several of our staff speak fluent Ukrainian, and we will translate for you
+    when necessary. There is also much that can be done without having to speak
+    at all (e.g. tract distribution, chalk art, multimedia setup, literature
+    printing and collation, etc.)</p>
 
-- title: "I am a pastor/church leader. May I come for less time than the standard one-month minimum?"
-  answer: "<p>Yes, you may. We recognize that pastors/church leaders have obligations which often do not allow for extended absences. If you are interested in visiting CMO during the summer, please <a href=\"mailto:info@euroteamoutreach.org\">contact us</a> to discuss further details.</p>"
+- title: I want to come for CMO, but I am under 17. Can I still come?
+  answer: >
+    <p>Our minimum age requirement for all ETO outreaches is 17. There are many
+    reasons for this, the main ones being maturity and liability concerns.
+    However, we know that God can call someone younger than that. If you are
+    under 17, and you feel strongly that God is calling you to serve with ETO,
+    please <a href="mailto:info@euroteamoutreach.org">contact us</a>. Such
+    requests are evaluated on a case by case basis.</p>
 
-- title: "I am married and/or have children. May I come for less time than the standard one-month minimum?"
-  answer: "<p>Yes, you may. Please <a href=\"mailto:info@euroteamoutreach.org\">contact us</a> to discuss further details.</p>"
+- title: >
+    I want to come for CMO, but I am not a US/Canadian citizen. Can I still
+    come?
+  answer: >
+    <p>Our organization deals primarily with US/Canadian citizens. We are a
+    US-based ministry, and all of our materials, application forms, legal
+    documents, etc. are geared for Americans/Canadians.</p><p>At present, the
+    immigration requirements imposed on American or Canadian citizens are fairly
+    lenient. If you are a non-US/Canadian citizen, and you feel that God is
+    calling you to particiate in CMO, please
+    <a href="mailto:info@euroteamoutreach.org">contact us</a>. Such requests
+    are evaluated on a case by case basis.</p>
 
-- title: "I am a young lady, and I want to get involved in overseas missions. Does ETO have any projects for young ladies?"
-  answer: "<p>No. At this time all of our outreaches are setup to accommodate young men only. Many of our activities present situations (such as multi-day camping in the mountains) where a co-ed group would not be feasible.</p>"
+- title: >
+    I am a young lady, and I want to get involved in overseas missions. Does
+    ETO have any projects for young ladies?
+  answer: >
+    <p>In 2022, for the first time in CMO history, we decided to open the
+    project to young ladies. Sadly, CMO 2022 was cancelled when war broke out in
+    Ukraine. With the war ongoing in 2023, we have decided to keep things
+    limited to men-only for now. However, our desire is to open our doors to
+    female applicants as soon as we feel that things have stabilised enough.</p>
 
-- title: "What is the difference between ETO and CMO?"
-  answer: "<p>We love three-letter acronyms. Sorry. ETO stands for <a href=\"https://www.euroteamoutreach.org/\" target=\"_blank\">Euro Team Outreach, Inc.</a>, our primary ministry organization. CMO stands for Carpathian Mountain Outreach, an annual missions project hosted by ETO.</p>"
-
+- title: What is the difference between ETO and CMO?
+  answer: >
+    <p>We love three-letter acronyms. Sorry. ETO stands for
+    <a href="https://www.euroteamoutreach.org/" target="_blank">Euro Team
+    Outreach, Inc.</a>, our primary ministry organization. CMO stands for
+    Carpathian Mountain Outreach, an annual missions project hosted by ETO.</p>

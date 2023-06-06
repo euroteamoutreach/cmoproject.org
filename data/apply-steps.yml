@@ -1,29 +1,82 @@
-- image: "passport-icon.svg"
-  title: "1. If you don&rsquo;t already have a passport, get one."
-  body: "<p>Even if you don&rsquo;t end up coming to Ukraine, a passport is good to have. It takes time to get one, so don&rsquo;t wait. U.S. citizens can pick up a passport application at any local Post Office or download one from <a href=\"http://travel.state.gov/content/passports/en/passports.html\" target=\"_blank\">travel.state.gov</a>. <strong>You must have a United States or Canadian passport before you come to Ukraine. If you are not a US or Canadian citizen, please <a href=\"mailto:info@euroteamoutreach.org\">contact us</a> before you apply for CMO</strong>.</p>"
+- image: passport-icon.svg
+  title: 1. If you don&rsquo;t already have a passport, get one.
+  body: >
+    <p>Even if you don&rsquo;t end up coming to Ukraine, a passport is good to
+    have. It takes time to get one, so don&rsquo;t wait. U.S. citizens can pick
+    up a passport application at any local Post Office or download one from
+    <a href="http://travel.state.gov/content/passports/en/passports.html"
+    target="_blank">travel.state.gov</a>. <strong>You must have a United
+    States or Canadian passport before you come to Ukraine. If you are not a US
+    or Canadian citizen, please <a href="mailto:info@euroteamoutreach.org">
+    contact us</a> before you apply for CMO</strong>.</p>
   path: ""
   link_text: ""
 
-- image: "cmo-info-pack-icon.svg"
-  title: "2. Download the Info Pack and read it thoroughly."
-  body: "<p>Don&rsquo;t skim it, read it. Many of the questions you have, and several you probably haven&rsquo;t thought of yet, will be answered in this document. Reading the Info Pack is required before you apply, and we will expect you to know the things contained in it.</p>"
-  path: "info_pack_path"
-  link_text: "Download Info Pack"
+- image: cmo-info-pack-icon.svg
+  title: 2. Download the Info Pack and read it thoroughly.
+  body: >
+    <p>Please don&rsquo;t skim it, <em>read it</em>. Many of the questions you
+    have, and several you probably haven&rsquo;t thought of yet, will be
+    answered in this document. Reading the Info Pack is required before you
+    apply, and we will expect you to know the things contained in it.</p>
+  path: info_pack_path
+  link_text: Download Info Pack
 
-- image: "cmo-app-icon.svg"
-  title: "3. Download the Application and read it thoroughly."
-  body: "<p>Once you have finished reading the Info Pack, fill out the Application. Again, read all enclosed documents carefully.</p>"
-  path: "application_path"
-  link_text: "Download Application"
+- image: cmo-guidelines-icon.svg
+  title: 3. Download the Ministry Guidelines and read them thoroughly.
+  body: >
+    <p>This document contains a list of the basic guidelines by which all CMO
+    team members must abide while serving overseas with Euro Team Outreach.</p>
+  path: ministry_guidelines_path
+  link_text: Download Ministry Guidelines
 
-- image: "cmo-rec-form-icon.svg"
-  title: "4. Give the Recommendation Form to your pastor or church leader."
-  body: "<p>The Recommendation Form must be filled out by your pastor or church leader and mailed to our office separately. We cannot complete your application process until we receive this document.</p>"
-  path: "rec_form_path"
-  link_text: "Download Recommendation Form"
+- image: cmo-gear-list-icon.svg
+  title: 4. Download and review the Gear List.
+  body: >
+    <p>This is a list of the essential items you will need during CMO
+    %{current_project_year}, including camping gear, clothing, and electronics.
+    Most of the items on this list are required for all team members. You can
+    also find the Gear List on page %{info_pack_gear_list_page} of the Info
+    Pack.</p>
+  path: gear_list_path
+  link_text: Download Gear List
 
-- image: "envelope.svg"
-  title: "5. Mail your application, along with all applicable attachments to our main office."
-  body: "<p>Euro Team Outreach, Inc.<br />16723 Britford<br />Houston, TX 77084</p>"
+- image: cmo-release-icon.svg
+  title: 5. Download, read, and sign the Liability Release.
+  body: >
+    <p>We hope for the best, but it's important to plan for the unexpected. We
+    want you to be clear about your responsibilties as a participant in CMO
+    %{current_project_year}. Once you've downloaded this release and read it
+    thoroughly, please sign it and scan it to your computer. (Opt for either
+    JPG or PDF format if possible.) You will be asked to upload your signed
+    release during the application process.</p>
+  path: liability_release_path
+  link_text: Download Liability Release
+
+- image: cmo-testimony-icon.svg
+  title: 6. Write down your personal testimony.
+  body: >
+    <p>Please provide a brief description of how you came to personal faith in
+    the Lord Jesus Christ. Save this as a document on your computer in a format
+    such as DOCX (Word) or PDF.</p>
+  path: ""
+  link_text: ""
+
+- image: cmo-avatar-icon.svg
+  title: 7. Find a good color photograph of yourself.
+  body: >
+    <p>Please select a close-up, color photograph of yourself with your face
+    clearly visible. This file should be in an image format, such as JPG/JPEG
+    or PNG.</p>
+  path: ""
+  link_text: ""
+
+- image: cmo-apply-online-icon.svg
+  title: 8. Apply online!
+  body: >
+    <p>Once you've completed all the above steps, you're ready to begin the
+    online application process. In order to access the application form (which
+    uses Google Forms) you need to be signed in to your Google account. Click
+    the button below to get started!</p>
   path: ""
   link_text: ""

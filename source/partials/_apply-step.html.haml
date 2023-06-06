@@ -3,7 +3,7 @@
     = inline_svg step["image"], class: "svg-icon"
   .comment-content
     %h1= step["title"]
-    = step["body"]
+    = data_sub(step["body"])
     - unless step["path"].empty?
       %p
         = link_to send(%{#{step["path"]}}) do

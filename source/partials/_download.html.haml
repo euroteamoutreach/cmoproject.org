@@ -4,7 +4,7 @@
   .card-image
     = inline_svg download["image"], class: "svg-image"
   .card-copy
-    = download["body"]
+    = data_sub(download["body"])
   .download
     = link_to send(%{#{download["path"]}}) do
       %button
